@@ -11,12 +11,14 @@
 !.yarn/versions
 .idea
 
+
 # testing
 /coverage
 
 # next.js
 /.next/
 /out/
+/dist/
 
 # production
 /build
