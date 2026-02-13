@@ -3,7 +3,6 @@ import Script from 'next/script';
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +24,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Vietnam Motorcycle Tour </title>
+        <title>Home One || Tevily || Tevily HTML Template For Tour</title>
         <link rel="apple-touch-icon" sizes="180x180" href={getUrl("assets/images/favicons/apple-touch-icon.png")}/>
         <link rel="icon" type="image/png" sizes="32x32" href={getUrl("assets/images/favicons/favicon-32x32.png")}/>
         <link rel="icon" type="image/png" sizes="16x16" href={getUrl("assets/images/favicons/favicon-16x16.png")}/>
@@ -81,7 +80,7 @@ export default function Home() {
                         <span className="icon-phone-call"></span>
                       </div>
                       <div className="text">
-                        <a href="tel:+84-935-797-550">+84 935 797 550</a>
+                        <a href="tel:+92-666-999-0000">+ 92 666 999 0000</a>
                       </div>
                     </li>
                     <li>
@@ -89,7 +88,7 @@ export default function Home() {
                         <span className="icon-at"></span>
                       </div>
                       <div className="text">
-                        <a href="mailto:easyridermotorbiketour@gmail.com">easyridermotorbiketour@gmail.com</a>
+                        <a href="mailto:needhelp@company.com">needhelp@company.com</a>
                       </div>
                     </li>
                   </ul>
@@ -116,12 +115,7 @@ export default function Home() {
                 <div className="main-menu-wrapper-inner clearfix">
                   <div className="main-menu-wrapper__left clearfix">
                     <div className="main-menu-wrapper__logo">
-                      <Link href="/">
-                        <img
-                          style={{ height: '45px' }}
-                          src={getUrl("assets/images/logo/logo.jpeg")} alt="Logo"
-                        />
-                      </Link>
+                      <a href="index.html"><img src={getUrl("assets/images/resources/logo-1.png")} alt=""/></a>
                     </div>
                     <div className="main-menu-wrapper__main-menu">
                       <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
@@ -208,7 +202,7 @@ export default function Home() {
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
+                     style={{ backgroundImage: "url(assets/images/backgrounds/main-slider-1-1.jpg);" }}></div>
                 <div className="image-layer-overlay"></div>
                 <div className="container">
                   <div className="swiper-slide-inner">
@@ -223,7 +217,7 @@ export default function Home() {
               </div>
               <div className="swiper-slide">
                 <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
+                     style={{ backgroundImage: "url(assets/images/backgrounds/main-slider-1-2.jpg);" }}></div>
                 <div className="image-layer-overlay"></div>
                 <div className="container">
                   <div className="swiper-slide-inner">
@@ -238,7 +232,7 @@ export default function Home() {
               </div>
               <div className="swiper-slide">
                 <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
+                     style={{ backgroundImage: "url(assets/images/backgrounds/main-slider-1-3.jpg);" }}></div>
                 <div className="image-layer-overlay"></div>
                 <div className="container">
                   <div className="swiper-slide-inner">
@@ -401,7 +395,7 @@ export default function Home() {
                       </div>
                       <div className="about-one__call-number">
                         <p>Book Tour Now</p>
-                        <h4><a href="tel:+84-935-797-550">+84 935 797 550</a></h4>
+                        <h4><a href="tel:666-888-0000">666 888 0000</a></h4>
                       </div>
                     </div>
                     <div className="about-one__discount">
@@ -1289,12 +1283,8 @@ export default function Home() {
                   <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div className="footer-widget__column footer-widget__about">
                       <div className="footer-widget__about-logo">
-                        <Link href='/'>
-                          <img
-                            style={{ height: '45px', opacity: '.9' }}
-                            src={getUrl("assets/images/logo/logo-white.png")} alt="Logo"
-                          />
-                        </Link>
+                        <a href="index.html"><img src={getUrl("assets/images/resources/footer-logo.png")}
+                                                  alt=""/></a>
                       </div>
                       <p className="footer-widget__about-text">Welcome to our Trip and Tour Agency. Lorem
                         simply text amet cing elit.</p>
@@ -1304,7 +1294,7 @@ export default function Home() {
                             <i className="fas fa-phone-square-alt"></i>
                           </div>
                           <div className="text">
-                            <a href="tel:+84-935-797-550">+84 935 797 550</a>
+                            <a href="tel:+92-666-888-0000">+92 666 888 0000</a>
                           </div>
                         </li>
                         <li>
@@ -1312,7 +1302,7 @@ export default function Home() {
                             <i className="fas fa-envelope"></i>
                           </div>
                           <div className="text">
-                            <a href="mailto:easyridermotorbiketour@gmail.com">easyridermotorbiketour@gmail.com</a>
+                            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
                           </div>
                         </li>
                         <li>
@@ -1320,15 +1310,7 @@ export default function Home() {
                             <i className="fas fa-map-marker-alt"></i>
                           </div>
                           <div className="text">
-                            <p>Alley 05-07 Nguyen Trung Truc st.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div className="text">
-                            <p>Nha Trang City, Vietnam</p>
+                            <p>666 road, broklyn street new york</p>
                           </div>
                         </li>
                       </ul>
@@ -1399,7 +1381,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="site-footer__bottom-right">
-                      <p>@ All Copyright {new Date().getFullYear()}</p>
+                      <p>@ All Copyright 2021, <a href="#">Bracket Web</a></p>
                     </div>
                     <div className="site-footer__bottom-left-arrow">
                       <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><span
@@ -1419,19 +1401,19 @@ export default function Home() {
           <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
 
           <div className="logo-box">
-            <a href="index.html" aria-label="logo image">
-              <img src={getUrl("assets/images/logo/logo-white.png")} width="155" alt=""/></a>
+            <a href="index.html" aria-label="logo image"><img src={getUrl("assets/images/resources/logo-2.png")} width="155"
+                                                              alt=""/></a>
           </div>
           <div className="mobile-nav__container"></div>
 
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope"></i>
-              <a href="mailto:easyridermotorbiketour@gmail.com">easyridermotorbiketour@gmail.com</a>
+              <a href="mailto:needhelp@packageName__.com">needhelp@tevily.com</a>
             </li>
             <li>
               <i className="fa fa-phone-alt"></i>
-              <a href="tel:+84-935-797-550">+84 935 797 550</a>
+              <a href="tel:666-888-0000">666 888 0000</a>
             </li>
           </ul>
           <div className="mobile-nav__top">

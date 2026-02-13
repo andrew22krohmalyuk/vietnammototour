@@ -459,8 +459,8 @@ ul {
 .main-menu-wrapper__logo {
     position: relative;
     float: left;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 31.5px;
     margin-right: 150px;
 }
 
@@ -1131,7 +1131,7 @@ ul {
 }
 
 .mobile-nav__content {
-    width: 320px;
+    width: 300px;
     background-color: var(--thm-black);
     z-index: 10;
     position: relative;
