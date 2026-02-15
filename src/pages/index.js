@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Home One || Tevily || Tevily HTML Template For Tour</title>
+        <title>Vietnam Motorcycle Tour </title>
         <link rel="apple-touch-icon" sizes="180x180" href={getUrl("assets/images/favicons/apple-touch-icon.png")}/>
         <link rel="icon" type="image/png" sizes="32x32" href={getUrl("assets/images/favicons/favicon-32x32.png")}/>
         <link rel="icon" type="image/png" sizes="16x16" href={getUrl("assets/images/favicons/favicon-16x16.png")}/>
@@ -1292,7 +1292,7 @@ export default function Home() {
                         <Link href='/'>
                           <img
                             style={{ height: '45px', opacity: '.9' }}
-                            src={getUrl("assets/images/logo/logo-footer-white.png")} alt="Logo"
+                            src={getUrl("assets/images/logo/logo-white.png")} alt="Logo"
                           />
                         </Link>
                       </div>
@@ -1419,8 +1419,8 @@ export default function Home() {
           <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
 
           <div className="logo-box">
-            <a href="index.html" aria-label="logo image"><img src={getUrl("assets/images/resources/logo-2.png")} width="155"
-                                                              alt=""/></a>
+            <a href="index.html" aria-label="logo image">
+              <img src={getUrl("assets/images/logo/logo-white.png")} width="155" alt=""/></a>
           </div>
           <div className="mobile-nav__container"></div>
 
