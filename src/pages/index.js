@@ -97,13 +97,9 @@ export default function Home() {
                 <div className="main-header__top-right">
                   <div className="main-header__top-right-inner">
                     <div className="main-header__top-right-social">
-                      <a href="#"><i className="fab fa-facebook"></i></a>
-                      <a href="#"><i className="fab fa-twitter"></i></a>
+                      <a href="#"><i className="fab fa-youtube"></i></a>
+                      <a href="#"><i className="fab fa-tripadvisor"></i></a>
                       <a href="#"><i className="fab fa-instagram"></i></a>
-                      <a href="#"><i className="fab fa-dribbble"></i></a>
-                    </div>
-                    <div className="main-header__top-right-btn-box">
-                      <a href="#" className="thm-btn main-header__top-right-btn">Become a local guide</a>
                     </div>
                   </div>
                 </div>
@@ -118,7 +114,7 @@ export default function Home() {
                     <div className="main-menu-wrapper__logo">
                       <Link href="/">
                         <img
-                          style={{ height: '45px' }}
+                          style={{ height: '54px' }}
                           src={getUrl("assets/images/logo/logo.jpeg")} alt="Logo"
                         />
                       </Link>
@@ -143,31 +139,11 @@ export default function Home() {
                           </ul>
                         </li>
                         <li className="dropdown">
-                          <a href="#">Destinations</a>
-                          <ul>
-                            <li><a href="destinations.html">Destinations</a></li>
-                            <li><a href="destinations-details.html">Destinations Detail</a></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
                           <a href="#">Tours</a>
                           <ul>
                             <li><a href="tours.html">Tours</a></li>
                             <li><a href="tours-list.html">Tours List</a></li>
                             <li><a href="tour-details.html">Tours Details</a></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Pages</a>
-                          <ul>
-                            <li><a href="about.html">About</a></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">News</a>
-                          <ul>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="news-details.html">News Details</a></li>
                           </ul>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
@@ -256,42 +232,6 @@ export default function Home() {
             <div className="main-slider-nav">
               <div className="main-slider-button-prev"><span className="icon-right-arrow"></span></div>
               <div className="main-slider-button-next"><span className="icon-right-arrow"></span></div>
-            </div>
-          </div>
-        </section>
-
-        <section className="tour-search">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="tour-search-box">
-                  <form className="tour-search-one" action="tour-sidebar.html">
-                    <div className="tour-search-one__inner">
-                      <div className="tour-search-one__inputs">
-                        <div className="tour-search-one__input-box">
-                          <label htmlFor="place">Where to</label>
-                          <input type="text" placeholder="Enter keywords" name="place" id="place"/>
-                        </div>
-                        <div className="tour-search-one__input-box">
-                          <label>When</label>
-                          <input type="text" placeholder="September" name="when" id="datepicker"/>
-                        </div>
-                        <div className="tour-search-one__input-box tour-search-one__input-box-last">
-                          <label htmlFor="type">Type</label>
-                          <select className="selectpicker" id="type">
-                            <option value="Adventure">Adventure</option>
-                            <option value="Wildlife">Wildlife</option>
-                            <option value="Sightseeing">Sightseeing</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="tour-search-one__btn-wrap">
-                        <button type="submit" className="thm-btn tour-search-one__btn">Find now</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -1392,9 +1332,8 @@ export default function Home() {
                   <div className="site-footer__bottom-inner">
                     <div className="site-footer__bottom-left">
                       <div className="footer-widget__social">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i className="fab fa-youtube"></i></a>
+                        <a href="#"><i className="fab fa-tripadvisor"></i></a>
                         <a href="#"><i className="fab fa-instagram"></i></a>
                       </div>
                     </div>
@@ -1436,9 +1375,8 @@ export default function Home() {
           </ul>
           <div className="mobile-nav__top">
             <div className="mobile-nav__social">
-              <a href="#" className="fab fa-twitter"></a>
-              <a href="#" className="fab fa-facebook-square"></a>
-              <a href="#" className="fab fa-pinterest-p"></a>
+              <a href="#" className="fab fa-youtube"></a>
+              <a href="#" className="fab fa-tripadvisor"></a>
               <a href="#" className="fab fa-instagram"></a>
             </div>
           </div>
