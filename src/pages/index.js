@@ -97,7 +97,7 @@ export default function Home() {
                 <div className="main-header__top-right">
                   <div className="main-header__top-right-inner">
                     <div className="main-header__top-right-social">
-                      <a href="#"><i className="fab fa-youtube"></i></a>
+                      <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
                       <a href="#"><i className="fab fa-tripadvisor"></i></a>
                       <a href="#"><i className="fab fa-instagram"></i></a>
                     </div>
@@ -124,28 +124,26 @@ export default function Home() {
                       <ul className="main-menu__list">
                         <li className="dropdown current">
                           <a href="index.html">Home</a>
-                          <ul>
-                            <li>
-                              <a href="index.html">Home One</a>
-                            </li>
-                            <li><a href="index2.html">Home Two</a></li>
-                            <li className="dropdown">
-                              <a href="#">Header Styles</a>
-                              <ul>
-                                <li><a href="index.html">Header One</a></li>
-                                <li><a href="index.html">Header Two</a></li>
-                              </ul>
-                            </li>
-                          </ul>
                         </li>
                         <li className="dropdown">
                           <a href="#">Tours</a>
                           <ul>
-                            <li><a href="tours.html">Tours</a></li>
-                            <li><a href="tours-list.html">Tours List</a></li>
-                            <li><a href="tour-details.html">Tours Details</a></li>
+                            <li><a href="tours.html">Nha Trang</a></li>
+                            <li><a href="tours-list.html">Dalat</a></li>
+                            <li><a href="tour-details.html">Mui Ne</a></li>
+                            <li><a href="tour-details.html">Sai Gon</a></li>
+                            <li><a href="tour-details.html">Hoi An</a></li>
+                            <li><a href="tour-details.html">Ha No</a></li>
                           </ul>
                         </li>
+                        <li className="dropdown">
+                          <a href="#">Rental</a>
+                          <ul>
+                            <li><a href="tours.html">Motorbike</a></li>
+                            <li><a href="tours-list.html">Car</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                       </ul>
                     </div>
@@ -183,50 +181,76 @@ export default function Home() {
 
             <div className="swiper-wrapper">
               <div className="swiper-slide">
-                <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
+                <div className="video-layer" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: '1', overflow: 'hidden' }}>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  >
+                    <source src={getUrl('assets/videos/banner.mp4')} type="video/mp4" />
+                  </video>
+                </div>
                 <div className="image-layer-overlay"></div>
                 <div className="container">
                   <div className="swiper-slide-inner">
                     <div className="row">
                       <div className="col-xl-12">
-                        <h2> Travel & Adventures</h2>
+                        <h2>Travel & Adventures</h2>
                         <p>Where Would You Like To Go?</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="swiper-slide">
-                <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
-                <div className="image-layer-overlay"></div>
-                <div className="container">
-                  <div className="swiper-slide-inner">
-                    <div className="row">
-                      <div className="col-xl-12">
-                        <h2> Travel & Adventures</h2>
-                        <p>Where Would You Like To Go?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="image-layer"
-                     style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>
-                <div className="image-layer-overlay"></div>
-                <div className="container">
-                  <div className="swiper-slide-inner">
-                    <div className="row">
-                      <div className="col-xl-12">
-                        <h2> Travel & Adventures</h2>
-                        <p>Where Would You Like To Go?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/*<div className="swiper-slide">*/}
+              {/*  <div className="image-layer"*/}
+              {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
+              {/*  <div className="image-layer-overlay"></div>*/}
+              {/*  <div className="container">*/}
+              {/*    <div className="swiper-slide-inner">*/}
+              {/*      <div className="row">*/}
+              {/*        <div className="col-xl-12">*/}
+              {/*          <h2> Travel & Adventures</h2>*/}
+              {/*          <p>Where Would You Like To Go?</p>*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+
+
+              {/*<div className="swiper-slide">*/}
+              {/*  <div className="image-layer"*/}
+              {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
+              {/*  <div className="image-layer-overlay"></div>*/}
+              {/*  <div className="container">*/}
+              {/*    <div className="swiper-slide-inner">*/}
+              {/*      <div className="row">*/}
+              {/*        <div className="col-xl-12">*/}
+              {/*          <h2> Travel & Adventures</h2>*/}
+              {/*          <p>Where Would You Like To Go?</p>*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+              {/*<div className="swiper-slide">*/}
+              {/*  <div className="image-layer"*/}
+              {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
+              {/*  <div className="image-layer-overlay"></div>*/}
+              {/*  <div className="container">*/}
+              {/*    <div className="swiper-slide-inner">*/}
+              {/*      <div className="row">*/}
+              {/*        <div className="col-xl-12">*/}
+              {/*          <h2> Travel & Adventures</h2>*/}
+              {/*          <p>Where Would You Like To Go?</p>*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
             </div>
 
             <div className="main-slider-nav">
@@ -246,13 +270,21 @@ export default function Home() {
               <div className="col-xl-3 col-lg-3">
                 <div className="destinations-one__single">
                   <div className="destinations-one__img">
-                    <img src={getUrl("assets/images/destination/destination-1-1.png")} alt=""/>
+                    <picture style={{ display: 'block', width: '285px', height: '285px', overflow: 'hidden' }}>
+                      <source srcSet="https://www.agoda.com/wp-content/uploads/2024/02/Nha-Trang-Cable-Vietnam-1244x700.jpg" type="image/webp" />
+                      <img
+                        src="https://www.agoda.com/wp-content/uploads/2024/02/Nha-Trang-Cable-Vietnam-1244x700.jpg"
+                        alt=""
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                      />
+                      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
+                    </picture>
                     <div className="destinations-one__content">
-                      <h2 className="destinations-one__title"><a href="destinations-details.html">Spain</a>
+                      <h2 className="destinations-one__title"><a href="destinations-details.html">Nha Trang</a>
                       </h2>
                     </div>
                     <div className="destinations-one__button">
-                      <a href="#">6 tours</a>
+                      <a href="#">12 tours</a>
                     </div>
                   </div>
                 </div>
@@ -260,14 +292,21 @@ export default function Home() {
               <div className="col-xl-6 col-lg-6">
                 <div className="destinations-one__single">
                   <div className="destinations-one__img">
-                    <img src={getUrl("assets/images/destination/destination-1-2.png")} alt=""/>
+                    <picture style={{ display: 'block', width: '580px', height: '285px', overflow: 'hidden' }}>
+                      <source srcSet="https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg" type="image/webp" />
+                      <img
+                        src="https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg"
+                        alt=""
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                      />
+                      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
+                    </picture>
                     <div className="destinations-one__content">
-                      <p className="destinations-one__sub-title">Wildlife</p>
-                      <h2 className="destinations-one__title"><a href="destinations-details.html">Thailand</a>
+                      <h2 className="destinations-one__title"><a href="destinations-details.html">Dalat</a>
                       </h2>
                     </div>
                     <div className="destinations-one__button">
-                      <a href="#">6 tours</a>
+                      <a href="#">5 tours</a>
                     </div>
                   </div>
                 </div>
@@ -275,13 +314,21 @@ export default function Home() {
               <div className="col-xl-3 col-lg-3">
                 <div className="destinations-one__single">
                   <div className="destinations-one__img">
-                    <img src={getUrl("assets/images/destination/destination-1-3.png")} alt=""/>
+                    <picture style={{ display: 'block', width: '285px', height: '285px', overflow: 'hidden' }}>
+                      <source srcSet="https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp" type="image/webp" />
+                      <img
+                        src="https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp"
+                        alt=""
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                      />
+                      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
+                    </picture>
                     <div className="destinations-one__content">
-                      <h2 className="destinations-one__title"><a href="destinations-details.html">Africa</a>
+                      <h2 className="destinations-one__title"><a href="destinations-details.html">Mui Ne</a>
                       </h2>
                     </div>
                     <div className="destinations-one__button">
-                      <a href="#">6 tours</a>
+                      <a href="#">12 tours</a>
                     </div>
                   </div>
                 </div>
@@ -290,13 +337,21 @@ export default function Home() {
               <div className="col-xl-6 col-lg-6">
                 <div className="destinations-one__single">
                   <div className="destinations-one__img">
-                    <img src={getUrl("assets/images/destination/destination-1-4.png")} alt=""/>
+                    <picture style={{ display: 'block', width: '580px', height: '285px', overflow: 'hidden' }}>
+                      <source srcSet="https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg" type="image/webp" />
+                      <img
+                        src="https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg"
+                        alt=""
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                      />
+                      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
+                    </picture>
                     <div className="destinations-one__content">
-                      <h2 className="destinations-one__title"><a
-                        href="destinations-details.html">Australia</a></h2>
+                      <h2 className="destinations-one__title"><a href="destinations-details.html">Sai Gon</a>
+                      </h2>
                     </div>
                     <div className="destinations-one__button">
-                      <a href="#">6 tours</a>
+                      <a href="#">12 tours</a>
                     </div>
                   </div>
                 </div>
@@ -304,14 +359,21 @@ export default function Home() {
               <div className="col-xl-6 col-lg-6">
                 <div className="destinations-one__single">
                   <div className="destinations-one__img">
-                    <img src={getUrl("assets/images/destination/destination-1-5.png")} alt=""/>
+                    <picture style={{ display: 'block', width: '580px', height: '285px', overflow: 'hidden' }}>
+                      <source srcSet="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5022fa3d9e45c25486f8bcc9adcfdb44a09ded12/big-94f2b85fd88b035fb52518c04d9cfd63.jpg" type="image/webp" />
+                      <img
+                        src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/5022fa3d9e45c25486f8bcc9adcfdb44a09ded12/big-94f2b85fd88b035fb52518c04d9cfd63.jpg"
+                        alt=""
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                      />
+                      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
+                    </picture>
                     <div className="destinations-one__content">
-                      <p className="destinations-one__sub-title">Adventure</p>
-                      <h2 className="destinations-one__title"><a
-                        href="destinations-details.html">Switzerland</a></h2>
+                      <h2 className="destinations-one__title"><a href="destinations-details.html">Hoi An</a>
+                      </h2>
                     </div>
                     <div className="destinations-one__button">
-                      <a href="#">6 tours</a>
+                      <a href="#">12 tours</a>
                     </div>
                   </div>
                 </div>
@@ -332,8 +394,16 @@ export default function Home() {
               <div className="col-xl-6 wow fadeInLeft" data-wow-duration="1500ms">
                 <div className="about-one__left">
                   <div className="about-one__img-box">
-                    <div className="about-one__img">
-                      <img src={getUrl("assets/images/resources/about-one-img-1.png")} alt=""/>
+                    <div className="about-one__img destinations-one__img">
+                      <picture style={{ display: 'block', width: '624px', height: '579px', overflow: 'hidden' }}>
+                        <source srcSet="https://i0.wp.com/jolandblog.com/wp-content/uploads/2015/11/ninh-binh-vietname.jpg?fit=1000%2C667&ssl=1" type="image/webp" />
+                        <img
+                          src="https://i0.wp.com/jolandblog.com/wp-content/uploads/2015/11/ninh-binh-vietname.jpg?fit=1000%2C667&ssl=1"
+                          alt=""
+                          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
+                        />
+                        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.2)' }} />
+                      </picture>
                     </div>
                     <div className="about-one__call">
                       <div className="about-one__call-icon">
@@ -344,10 +414,6 @@ export default function Home() {
                         <h4><a href="tel:+84-935-797-550">+84 935 797 550</a></h4>
                       </div>
                     </div>
-                    <div className="about-one__discount">
-                      <h2>30%</h2>
-                      <h3>Discount</h3>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -355,18 +421,16 @@ export default function Home() {
                 <div className="about-one__right">
                   <div className="section-title text-left">
                     <span className="section-title__tagline">Get to know us</span>
-                    <h2 className="section-title__title">Plan Your Trip with Trevily</h2>
+                    <h2 className="section-title__title">Plan Your Trip with Us</h2>
                   </div>
-                  <p className="about-one__right-text">There are many variations of passages of available but the
-                    majority have suffered alteration in some form, by injected hum randomised words which
-                    don&#39;t look even slightly.</p>
+                  <p className="about-one__right-text">We are leading day tour and multi-day tour on organizer in Nha Trang, Vietnam</p>
                   <ul className="list-unstyled about-one__points">
                     <li>
                       <div className="icon">
                         <i className="fa fa-check"></i>
                       </div>
                       <div className="text">
-                        <p>Invest in your simply neighborhood</p>
+                        <p>Motorbike and car tour</p>
                       </div>
                     </li>
                     <li>
@@ -374,7 +438,7 @@ export default function Home() {
                         <i className="fa fa-check"></i>
                       </div>
                       <div className="text">
-                        <p>Support people in free text extreme need</p>
+                        <p>Friendly team and expert local guide</p>
                       </div>
                     </li>
                     <li>
@@ -382,7 +446,7 @@ export default function Home() {
                         <i className="fa fa-check"></i>
                       </div>
                       <div className="text">
-                        <p>Largest global industrial business community</p>
+                        <p>Experience in truly remarkable land</p>
                       </div>
                     </li>
                   </ul>
@@ -402,6 +466,7 @@ export default function Home() {
             <div className="row">
               <div className="col-xl-12">
                 <div className="popular-tours__carousel owl-theme owl-carousel">
+
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-1.jpg")} alt=""/>
@@ -415,16 +480,16 @@ export default function Home() {
                       <div className="popular-tours__stars">
                         <i className="fa fa-star"></i> 8.0 Superb
                       </div>
-                      <h3 className="popular-tours__title"><a href="tour-details.html">National Park 2 Days
-                        Tour</a></h3>
-                      <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
+                      <h3 className="popular-tours__title"><a href="tour-details.html">Nha Trang to Da Lat Tour</a></h3>
+                      <p className="popular-tours__rate"><span>$70</span> / Per Person</p>
                       <ul className="popular-tours__meta list-unstyled">
-                        <li><a href="tour-details.html">3 Days</a></li>
+                        <li><a href="tour-details.html">1 Day</a></li>
                         <li><a href="tour-details.html">12+</a></li>
                         <li><a href="tour-details.html">Los Angeles</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-2.jpg")} alt=""/>
@@ -438,16 +503,16 @@ export default function Home() {
                       <div className="popular-tours__stars">
                         <i className="fa fa-star"></i> 8.0 Superb
                       </div>
-                      <h3 className="popular-tours__title"><a href="tour-details.html">The Dark Forest
-                        Adventure</a></h3>
-                      <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
+                      <h3 className="popular-tours__title"><a href="tour-details.html">Explore Dalat</a></h3>
+                      <p className="popular-tours__rate"><span>$130</span> / Per Person</p>
                       <ul className="popular-tours__meta list-unstyled">
-                        <li><a href="tour-details.html">3 Days</a></li>
+                        <li><a href="tour-details.html">1 Day</a></li>
                         <li><a href="tour-details.html">12+</a></li>
                         <li><a href="tour-details.html">Los Angeles</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-3.jpg")} alt=""/>
@@ -461,16 +526,16 @@ export default function Home() {
                       <div className="popular-tours__stars">
                         <i className="fa fa-star"></i> 8.0 Superb
                       </div>
-                      <h3 className="popular-tours__title"><a href="tour-details.html">Discover Depth of
-                        Beach</a></h3>
-                      <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
+                      <h3 className="popular-tours__title"><a href="tour-details.html">Baho Waterfall</a></h3>
+                      <p className="popular-tours__rate"><span>$70</span> / Per Person</p>
                       <ul className="popular-tours__meta list-unstyled">
-                        <li><a href="tour-details.html">3 Days</a></li>
+                        <li><a href="tour-details.html">1 Day</a></li>
                         <li><a href="tour-details.html">12+</a></li>
                         <li><a href="tour-details.html">Los Angeles</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-4.jpg")} alt=""/>
@@ -484,11 +549,10 @@ export default function Home() {
                       <div className="popular-tours__stars">
                         <i className="fa fa-star"></i> 8.0 Superb
                       </div>
-                      <h3 className="popular-tours__title"><a href="tour-details.html">Moscow Red City
-                        Land</a></h3>
-                      <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
+                      <h3 className="popular-tours__title"><a href="tour-details.html">Full Day Dalat</a></h3>
+                      <p className="popular-tours__rate"><span>$80</span> / Per Person</p>
                       <ul className="popular-tours__meta list-unstyled">
-                        <li><a href="tour-details.html">3 Days</a></li>
+                        <li><a href="tour-details.html">1 Day</a></li>
                         <li><a href="tour-details.html">12+</a></li>
                         <li><a href="tour-details.html">Los Angeles</a></li>
                       </ul>
@@ -1332,7 +1396,7 @@ export default function Home() {
                   <div className="site-footer__bottom-inner">
                     <div className="site-footer__bottom-left">
                       <div className="footer-widget__social">
-                        <a href="#"><i className="fab fa-youtube"></i></a>
+                        <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
                         <a href="#"><i className="fab fa-tripadvisor"></i></a>
                         <a href="#"><i className="fab fa-instagram"></i></a>
                       </div>
@@ -1375,7 +1439,7 @@ export default function Home() {
           </ul>
           <div className="mobile-nav__top">
             <div className="mobile-nav__social">
-              <a href="#" className="fab fa-youtube"></a>
+              <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ" className="fab fa-youtube"></a>
               <a href="#" className="fab fa-tripadvisor"></a>
               <a href="#" className="fab fa-instagram"></a>
             </div>
