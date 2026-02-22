@@ -988,7 +988,7 @@ export default function Home() {
           <div className="why-choose__container">
             <div className="why-choose__left">
               <div className="why-choose__left-bg"
-                   style={{ backgroundImage: "url(assets/images/backgrounds/why-choose-left-bg.jpg)" }}></div>
+                   style={{ backgroundImage: "url(https://static.vinwonders.com/production/vietnam-nature-2.jpeg)" }}></div>
               <div className="why-choose__toggle">
                 <p>Trips <br/> & tours</p>
               </div>
