@@ -1,3 +1,6 @@
+import { HeaderMobile } from "@/components/header-mobile";
+import Script from "next/script";
+import {getUrl} from "@/utils";
 
 export default function Contact() {
   return (
@@ -131,38 +134,33 @@ export default function Contact() {
         </section>
       </div>
 
-      <div className="mobile-nav__wrapper">
-        <div className="mobile-nav__overlay mobile-nav__toggler"></div>
-        <div className="mobile-nav__content">
-          <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
+      <HeaderMobile />
 
-          <div className="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="155"
-                                                              alt=""/></a>
-          </div>
-          <div className="mobile-nav__container"></div>
-
-          <ul className="mobile-nav__contact list-unstyled">
-            <li>
-              <i className="fa fa-envelope"></i>
-              <a href="mailto:needhelp@packageName__.com">needhelp@tevily.com</a>
-            </li>
-            <li>
-              <i className="fa fa-phone-alt"></i>
-              <a href="tel:666-888-0000">666 888 0000</a>
-            </li>
-          </ul>
-          <div className="mobile-nav__top">
-            <div className="mobile-nav__social">
-              <a href="#" className="fab fa-twitter"></a>
-              <a href="#" className="fab fa-facebook-square"></a>
-              <a href="#" className="fab fa-pinterest-p"></a>
-              <a href="#" className="fab fa-instagram"></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <Script src={getUrl("assets/vendors/jquery/jquery-3.6.0.min.js")} strategy="beforeInteractive" defer></Script>
+      <Script src={getUrl("assets/vendors/bootstrap/js/bootstrap.bundle.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jarallax/jarallax.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js")} strategy="beforeInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-appear/jquery.appear.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-validate/jquery.validate.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/nouislider/nouislider.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/odometer/odometer.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/swiper/swiper.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/tiny-slider/tiny-slider.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/wnumb/wNumb.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/wow/wow.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/isotope/isotope.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/countdown/countdown.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/owl-carousel/owl.carousel.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/twentytwenty/twentytwenty.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/twentytwenty/jquery.event.move.js")} strategy="beforeInteractive"></Script>
+      <Script src={getUrl("assets/vendors/bxslider/jquery.bxslider.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/bootstrap-select/js/bootstrap-select.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/vegas/vegas.min.js")} strategy="afterInteractive"></Script>
+      <Script src={getUrl("assets/vendors/jquery-ui/jquery-ui.js")} strategy="beforeInteractive"></Script>
+      <Script src={getUrl("assets/vendors/timepicker/timePicker.js")} strategy="beforeInteractive"></Script>
+      <Script src={getUrl("assets/js/tevily.js")} strategy="afterInteractive"></Script>
     </div>
   );
 }
