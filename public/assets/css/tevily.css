@@ -1454,17 +1454,6 @@ ul {
     font-weight: 400;
     font-family: var(--thm-reey-font);
     margin-bottom: 25px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateY(-90px);
-    transform: translateY(-90px);
-    -webkit-transition-delay: 1000ms;
-    transition-delay: 1000ms;
-    -webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-    transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease,
-        -webkit-transform 2000ms ease;
     z-index: 2;
 }
 
@@ -1486,16 +1475,6 @@ ul {
     font-size: 40px;
     color: var(--thm-base);
     font-weight: 500;
-    opacity: 0;
-    -webkit-transform: translateY(120px);
-    transform: translateY(120px);
-    -webkit-transition-delay: 0;
-    transition-delay: 0;
-    -webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-    transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease,
-        -webkit-transform 2000ms ease;
     z-index: 3;
 }
 
