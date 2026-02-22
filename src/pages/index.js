@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -16,6 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
+  const bannerVideoRef = useRef(null);
+
+  useEffect(() => {
+    bannerVideoRef.current.playbackRate = 0.8;
+  }, []);
+
   return (
     <>
       <div
@@ -53,8 +60,9 @@ export default function Home() {
                     loop
                     playsInline
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    ref={bannerVideoRef}
                   >
-                    <source src={getUrl('assets/videos/banner.mp4')} type="video/mp4" />
+                    <source src={getUrl('assets/videos/banner-0.MOV')} type="video/mp4" />
                   </video>
                 </div>
                 <div className="image-layer-overlay"></div>

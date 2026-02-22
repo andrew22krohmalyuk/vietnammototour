@@ -1,6 +1,6 @@
 import { HeaderMobile } from "@/components/header-mobile";
 import Script from "next/script";
-import {getUrl} from "@/utils";
+import { getUrl } from "@/utils";
 
 export default function Contact() {
   return (

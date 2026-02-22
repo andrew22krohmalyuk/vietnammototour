@@ -89,8 +89,8 @@ export const Header = () => {
                 </div>
               </div>
               <div className="main-menu-wrapper__right">
-                <a href="#" className="main-menu__search search-toggler icon-magnifying-glass"></a>
-                <a href="#" className="main-menu__user icon-avatar"></a>
+                {/*<a href="#" className="main-menu__search search-toggler icon-magnifying-glass"></a>*/}
+                {/*<a href="#" className="main-menu__user icon-avatar"></a>*/}
               </div>
             </div>
           </div>
