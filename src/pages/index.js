@@ -64,6 +64,7 @@ export default function Home() {
                   >
                     <source src={getUrl('assets/videos/banner-0.MOV')} type="video/mp4" />
                   </video>
+                  <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }}></div>
                 </div>
                 <div className="image-layer-overlay"></div>
                 <div className="container">
