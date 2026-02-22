@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Script from 'next/script';
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import { getUrl } from "../utils/index";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,148 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// `${process.env.__NEXT_ROUTER_BASEPATH}/next.svg`
-
-const getUrl = (path) => `${process.env.__NEXT_ROUTER_BASEPATH || ""}/${path}`;
-
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Vietnam Motorcycle Tour </title>
-        <link rel="apple-touch-icon" sizes="180x180" href={getUrl("assets/images/favicons/apple-touch-icon.png")}/>
-        <link rel="icon" type="image/png" sizes="32x32" href={getUrl("assets/images/favicons/favicon-32x32.png")}/>
-        <link rel="icon" type="image/png" sizes="16x16" href={getUrl("assets/images/favicons/favicon-16x16.png")}/>
-        <link rel="manifest" href={getUrl("assets/images/favicons/site.webmanifest")}/>
-        <meta name="description" content="Tevily HTML Template For Tour"/>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-          rel="stylesheet"/>
-
-        <link rel="stylesheet" href={getUrl("assets/vendors/bootstrap/css/bootstrap.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/animate/animate.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/animate/custom-animate.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/fontawesome/css/all.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/jarallax/jarallax.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/nouislider/nouislider.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/nouislider/nouislider.pips.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/odometer/odometer.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/swiper/swiper.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/tevily-icons/style.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/tiny-slider/tiny-slider.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/reey-font/stylesheet.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/owl-carousel/owl.carousel.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/owl-carousel/owl.theme.default.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/twentytwenty/twentytwenty.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/bxslider/jquery.bxslider.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/bootstrap-select/css/bootstrap-select.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/vegas/vegas.min.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/jquery-ui/jquery-ui.css")}/>
-        <link rel="stylesheet" href={getUrl("assets/vendors/timepicker/timePicker.css")}/>
-
-        <link rel="stylesheet" href={getUrl("assets/css/tevily.css")} />
-        <link rel="stylesheet" href={getUrl("assets/css/tevily-responsive.css")} />
-      </Head>
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-      {/*<div className="preloader">*/}
-      {/*  <img className="preloader__image" width="60" src={getUrl("assets/images/loader.png")} alt=""/>*/}
-      {/*</div>*/}
       <div className="page-wrapper">
-        <header className="main-header clearfix">
-          <div className="main-header__top">
-            <div className="container">
-              <div className="main-header__top-inner clearfix">
-                <div className="main-header__top-left">
-                  <ul className="list-unstyled main-header__top-address">
-                    <li>
-                      <div className="icon">
-                        <span className="icon-phone-call"></span>
-                      </div>
-                      <div className="text">
-                        <a href="tel:+84-935-797-550">+84 935 797 550</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-at"></span>
-                      </div>
-                      <div className="text">
-                        <a href="mailto:easyridermotorbiketour@gmail.com">easyridermotorbiketour@gmail.com</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div className="main-header__top-right">
-                  <div className="main-header__top-right-inner">
-                    <div className="main-header__top-right-social">
-                      <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
-                      <a href="#"><i className="fab fa-tripadvisor"></i></a>
-                      <a href="#"><i className="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <nav className="main-menu clearfix">
-            <div className="main-menu-wrapper clearfix">
-              <div className="container clearfix">
-                <div className="main-menu-wrapper-inner clearfix">
-                  <div className="main-menu-wrapper__left clearfix">
-                    <div className="main-menu-wrapper__logo">
-                      <Link href="/">
-                        <img
-                          style={{ height: '54px' }}
-                          src={getUrl("assets/images/logo/logo.jpeg")} alt="Logo"
-                        />
-                      </Link>
-                    </div>
-                    <div className="main-menu-wrapper__main-menu">
-                      <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
-                      <ul className="main-menu__list">
-                        <li className="dropdown current">
-                          <a href="index.html">Home</a>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Tours</a>
-                          <ul>
-                            <li><a href="tours.html">Nha Trang</a></li>
-                            <li><a href="tours-list.html">Dalat</a></li>
-                            <li><a href="tour-details.html">Mui Ne</a></li>
-                            <li><a href="tour-details.html">Sai Gon</a></li>
-                            <li><a href="tour-details.html">Hoi An</a></li>
-                            <li><a href="tour-details.html">Ha No</a></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Rental</a>
-                          <ul>
-                            <li><a href="tours.html">Motorbike</a></li>
-                            <li><a href="tours-list.html">Car</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="contact.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="main-menu-wrapper__right">
-                    <a href="#" className="main-menu__search search-toggler icon-magnifying-glass"></a>
-                    <a href="#" className="main-menu__user icon-avatar"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
 
         <div className="stricky-header stricked-menu main-menu">
           <div className="sticky-header__content" />
@@ -204,38 +68,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/*<div className="swiper-slide">*/}
-              {/*  <div className="image-layer"*/}
-              {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
-              {/*  <div className="image-layer-overlay"></div>*/}
-              {/*  <div className="container">*/}
-              {/*    <div className="swiper-slide-inner">*/}
-              {/*      <div className="row">*/}
-              {/*        <div className="col-xl-12">*/}
-              {/*          <h2> Travel & Adventures</h2>*/}
-              {/*          <p>Where Would You Like To Go?</p>*/}
-              {/*        </div>*/}
-              {/*      </div>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
-
-
-              {/*<div className="swiper-slide">*/}
-              {/*  <div className="image-layer"*/}
-              {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
-              {/*  <div className="image-layer-overlay"></div>*/}
-              {/*  <div className="container">*/}
-              {/*    <div className="swiper-slide-inner">*/}
-              {/*      <div className="row">*/}
-              {/*        <div className="col-xl-12">*/}
-              {/*          <h2> Travel & Adventures</h2>*/}
-              {/*          <p>Where Would You Like To Go?</p>*/}
-              {/*        </div>*/}
-              {/*      </div>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
               {/*<div className="swiper-slide">*/}
               {/*  <div className="image-layer"*/}
               {/*       style={{ backgroundImage: `url('${getUrl('assets/images/banner/banner.jpg')}');`, zIndex: '1' }}></div>*/}
@@ -1285,135 +1117,6 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="site-footer">
-          <div className="site-footer__top">
-            <div className="container">
-              <div className="site-footer__top-inner">
-                <div className="row">
-                  <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                    <div className="footer-widget__column footer-widget__about">
-                      <div className="footer-widget__about-logo">
-                        <Link href='/'>
-                          <img
-                            style={{ height: '45px', opacity: '.9' }}
-                            src={getUrl("assets/images/logo/logo-white.png")} alt="Logo"
-                          />
-                        </Link>
-                      </div>
-                      <p className="footer-widget__about-text">Welcome to our Trip and Tour Agency. Lorem
-                        simply text amet cing elit.</p>
-                      <ul className="footer-widget__about-contact list-unstyled">
-                        <li>
-                          <div className="icon">
-                            <i className="fas fa-phone-square-alt"></i>
-                          </div>
-                          <div className="text">
-                            <a href="tel:+84-935-797-550">+84 935 797 550</a>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fas fa-envelope"></i>
-                          </div>
-                          <div className="text">
-                            <a href="mailto:easyridermotorbiketour@gmail.com">easyridermotorbiketour@gmail.com</a>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div className="text">
-                            <p>Alley 05-07 Nguyen Trung Truc st.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div className="text">
-                            <p>Nha Trang City, Vietnam</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                    <div className="footer-widget__column footer-widget__company clearfix">
-                      <h3 className="footer-widget__title">Company</h3>
-                      <ul className="footer-widget__company-list list-unstyled">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Community Blog</a></li>
-                        <li><a href="#">Rewards</a></li>
-                        <li><a href="#">Work with Us</a></li>
-                        <li><a href="#">Meet the Team</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                    <div className="footer-widget__column footer-widget__explore">
-                      <h3 className="footer-widget__title">Explore</h3>
-                      <ul className="list-unstyled footer-widget__explore-list">
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Affilitate Program</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                    <div className="footer-widget__column footer-widget__newsletter">
-                      <h3 className="footer-widget__title">Newsletter</h3>
-                      <form className="footer-widget__newsletter-form mc-form"
-                            data-url="https://xyz.us18.list-manage.com/subscribe/post?u=20e91746ef818cd941998c598&id=cc0ee8140e">
-                        <div className="footer-widget__newsletter-input-box">
-                          <input type="email" placeholder="Email address" name="EMAIL"/>
-                          <button type="submit"
-                                  className="footer-widget__newsletter-btn">Subscribe
-                          </button>
-                        </div>
-                      </form>
-                      <div className="mc-form__response text-center"></div>
-                      <div className="footer-widget__newsletter-bottom">
-                        <div className="footer-widget__newsletter-bottom-icon">
-                          <i className="fa fa-check"></i>
-                        </div>
-                        <div className="footer-widget__newsletter-bottom-text">
-                          <p>I agree to all terms and policies</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="site-footer__bottom">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="site-footer__bottom-inner">
-                    <div className="site-footer__bottom-left">
-                      <div className="footer-widget__social">
-                        <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
-                        <a href="#"><i className="fab fa-tripadvisor"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                    <div className="site-footer__bottom-right">
-                      <p>@ All Copyright {new Date().getFullYear()}</p>
-                    </div>
-                    <div className="site-footer__bottom-left-arrow">
-                      <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><span
-                        className="icon-right-arrow"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
 
       <div className="mobile-nav__wrapper">
@@ -1484,7 +1187,6 @@ export default function Home() {
       <Script src={getUrl("assets/vendors/vegas/vegas.min.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/jquery-ui/jquery-ui.js")} strategy="beforeInteractive"></Script>
       <Script src={getUrl("assets/vendors/timepicker/timePicker.js")} strategy="beforeInteractive"></Script>
-
       <Script src={getUrl("assets/js/tevily.js")} strategy="afterInteractive"></Script>
 
       </div>
