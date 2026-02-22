@@ -13,7 +13,7 @@ export default function Rental() {
 
         <section className="page-header">
           <div className="page-header__top">
-            <div className="page-header-bg" style={{ backgroundImage: 'url(assets/images/backgrounds/page-header-bg.jpg)' }}>
+            <div className="page-header-bg" style={{ backgroundImage: 'url(https://vietnammotorcycletours.com/storage/2022/04/AR500963-1920x1280.jpg)' }}>
             </div>
             <div className="page-header-bg-overly"></div>
             <div className="container">

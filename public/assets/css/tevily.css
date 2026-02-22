@@ -4703,7 +4703,6 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%);
 }
 
 .page-header-bg-overly {

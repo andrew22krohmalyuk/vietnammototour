@@ -1,6 +1,6 @@
 import Script from 'next/script';
-import {getUrl} from "@/utils";
-import {HeaderMobile} from "@/components/header-mobile";
+import { getUrl } from "@/utils";
+import { HeaderMobile } from "@/components/header-mobile";
 
 export default function Tours() {
   return (
@@ -13,7 +13,7 @@ export default function Tours() {
 
         <section className="page-header">
           <div className="page-header__top">
-            <div className="page-header-bg" style={{ backgroundImage: 'url(assets/images/backgrounds/page-header-bg.jpg)' }}>
+            <div className="page-header-bg" style={{ backgroundImage: 'url(https://data.agatetravel.com/images/photogallery/2025/halong-bay-hanoi-vietnam.jpg)' }}>
             </div>
             <div className="page-header-bg-overly"></div>
             <div className="container">

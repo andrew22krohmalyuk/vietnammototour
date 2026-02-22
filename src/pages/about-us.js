@@ -9,7 +9,7 @@ export default function AboutUs() {
 
         <section className="page-header">
           <div className="page-header__top">
-            <div className="page-header-bg" style={{ backgroundImage: 'url(assets/images/backgrounds/page-header-bg.jpg)' }}>
+            <div className="page-header-bg" style={{ backgroundImage: 'url(https://vietnamamazingtours.com/uploads/Northern-Vietnam-Tours.jpeg)' }}>
             </div>
             <div className="page-header-bg-overly"></div>
             <div className="container">

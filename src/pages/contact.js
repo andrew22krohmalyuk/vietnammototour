@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="page-wrapper">
         <section className="page-header">
           <div className="page-header__top">
-            <div className="page-header-bg" style={{ backgroundImage: 'url(assets/images/backgrounds/page-header-bg.jpg)' }}>
+            <div className="page-header-bg" style={{ backgroundImage: 'url(https://media.gadventures.com/media-server/cache/59/d0/59d0b4d7c98928e2b9bf2e208409d5d6.jpg)' }}>
             </div>
             <div className="page-header-bg-overly"></div>
             <div className="container">
