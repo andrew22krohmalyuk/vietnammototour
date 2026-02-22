@@ -77,8 +77,7 @@ export default function Tours() {
                     <div className="popular-tours__stars">
                       <i className="fa fa-star"></i> 8.0 Superb
                     </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">The Dark Forest
-                      Adventure</a></h3>
+                    <h3 className="popular-tours__title"><a href="tour-details.html">The Dark Forest</a></h3>
                     <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
                     <ul className="popular-tours__meta list-unstyled">
                       <li><a href="tour-details.html">3 Days</a></li>
