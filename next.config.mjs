@@ -3,13 +3,12 @@ import packageJson from './package.json' with { type: 'json' };
 
 const nextConfig = {
   /* config options here */
-  output: 'export',
-  distDir: 'dist',
+  // output: 'export',
+  // distDir: 'dist',
   reactStrictMode: true,
-  images: {
-    unoptimized: true,
-  },
-  basePath: `/${packageJson.name}`,
+  // images: {
+  //   unoptimized: true,
+  // },
 };
 
 export default nextConfig;

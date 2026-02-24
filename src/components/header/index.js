@@ -1,9 +1,10 @@
+"use client";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { getUrl } from "../../utils/index";
 
 export const Header = () => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <header className="main-header clearfix">
@@ -58,10 +59,10 @@ export const Header = () => {
                 <div className="main-menu-wrapper__main-menu">
                   <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
                   <ul className="main-menu__list">
-                    <li className={`dropdown ${router.pathname === '/' ? 'current' : ''}`}>
+                    <li className={`dropdown ${pathname === '/' ? 'current' : ''}`}>
                       <Link href="/">Home</Link>
                     </li>
-                    <li className={`dropdown ${router.pathname.startsWith('/tours') ? 'current' : ''}`}>
+                    <li className={`dropdown ${pathname.startsWith('/tours') ? 'current' : ''}`}>
                       <Link href="/tours">Tours</Link>
                       <ul>
                         <li><Link href="/tours">Nha Trang</Link></li>
@@ -72,17 +73,17 @@ export const Header = () => {
                         <li><Link href="/tours">Ha No</Link></li>
                       </ul>
                     </li>
-                    <li className={`dropdown ${router.pathname.startsWith('/rental') ? 'current' : ''}`}>
+                    <li className={`dropdown ${pathname.startsWith('/rental') ? 'current' : ''}`}>
                       <Link href="/rental">Rental</Link>
                       <ul>
                         <li><Link href="/rental">Motorbike</Link></li>
                         <li><Link href="/rental">Car</Link></li>
                       </ul>
                     </li>
-                    <li className={router.pathname === '/about-us' ? 'current' : ''}>
+                    <li className={pathname === '/about-us' ? 'current' : ''}>
                       <Link href="/about-us">About Us</Link>
                     </li>
-                    <li className={router.pathname === '/contact' ? 'current' : ''}>
+                    <li className={pathname === '/contact' ? 'current' : ''}>
                       <Link href="/contact">Contact</Link>
                     </li>
                   </ul>

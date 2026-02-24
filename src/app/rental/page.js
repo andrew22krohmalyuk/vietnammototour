@@ -1,8 +1,13 @@
-import Script from 'next/script';
-import { getUrl } from "@/utils";
 import { HeaderMobile } from "@/components/header-mobile";
+import Script from "next/script";
+import {getUrl} from "@/utils";
 
-export default function Tours() {
+export const metadata = {
+  title: 'Motorcycle Rental - Vietnam Motorcycle Tour',
+  description: 'Rent a motorcycle for your Vietnam adventure',
+};
+
+export default function Rental() {
   return (
     <div>
       <div className="page-wrapper">
@@ -13,12 +18,12 @@ export default function Tours() {
 
         <section className="page-header">
           <div className="page-header__top">
-            <div className="page-header-bg" style={{ backgroundImage: 'url(https://data.agatetravel.com/images/photogallery/2025/halong-bay-hanoi-vietnam.jpg)' }}>
+            <div className="page-header-bg" style={{ backgroundImage: 'url(https://vietnammotorcycletours.com/storage/2022/04/AR500963-1920x1280.jpg)' }}>
             </div>
             <div className="page-header-bg-overly"></div>
             <div className="container">
               <div className="page-header__top-inner">
-                <h2>Popular Tours</h2>
+                <h2>Rental</h2>
               </div>
             </div>
           </div>
@@ -28,7 +33,7 @@ export default function Tours() {
                 <ul className="thm-breadcrumb list-unstyled">
                   <li><a href="index.html">Home</a></li>
                   <li><span>.</span></li>
-                  <li className="active">Tours</li>
+                  <li className="active">Rental</li>
                 </ul>
               </div>
             </div>
@@ -220,5 +225,5 @@ export default function Tours() {
       <Script src={getUrl("assets/vendors/timepicker/timePicker.js")} strategy="beforeInteractive"></Script>
       <Script src={getUrl("assets/js/tevily.js")} strategy="afterInteractive"></Script>
     </div>
-  );
+  )
 }

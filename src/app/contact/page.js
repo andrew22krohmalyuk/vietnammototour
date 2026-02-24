@@ -2,6 +2,11 @@ import { HeaderMobile } from "@/components/header-mobile";
 import Script from "next/script";
 import { getUrl } from "@/utils";
 
+export const metadata = {
+  title: 'Contact Us - Vietnam Motorcycle Tour',
+  description: 'Get in touch with Vietnam Motorcycle Tour - Any question? Feel free to contact us',
+};
+
 export default function Contact() {
   return (
     <div>
