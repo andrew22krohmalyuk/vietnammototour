@@ -1,9 +1,10 @@
+"use client";
 import React, { useEffect, useRef } from 'react';
 import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { HeaderMobile } from '../components/header-mobile/index';
-import { getUrl } from "../utils/index";
+import { HeaderMobile } from '../../components/header-mobile';
+import { getUrl } from "../../utils";
 import styles from "@/styles/Home.module.css";
 
 const geistSans = Geist({

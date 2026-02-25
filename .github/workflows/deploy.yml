@@ -26,5 +26,5 @@ jobs:
       - run: pnpm build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.next
       - uses: actions/deploy-pages@v4
