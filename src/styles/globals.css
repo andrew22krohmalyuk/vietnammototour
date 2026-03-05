@@ -40,3 +40,9 @@
 /*    color-scheme: dark;*/
 /*  }*/
 /*}*/
+
+/* Outbrave font utility class */
+.font-outbrave {
+  font-family: var(--font-outbrave), sans-serif;
+}
+

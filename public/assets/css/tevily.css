@@ -19,6 +19,7 @@
 --------------------------------------------------------------*/
 :root {
     --thm-font: 'DM Sans', sans-serif;
+    --font-outbrave: 'outBrave', sans-serif;
     --thm-reey-font: 'reeyregular';
     --thm-gray: #787780;
     --thm-gray-rgb: 120, 119, 128;
@@ -185,7 +186,7 @@ ul {
     align-items: center;
     line-height: 30px;
     font-weight: 400;
-    font-family: var(--thm-reey-font);
+    font-family: var(--font-outbrave);
 }
 
 .section-title__title {
@@ -1452,7 +1453,7 @@ ul {
     font-size: 80px;
     line-height: 90px;
     font-weight: 400;
-    font-family: var(--thm-reey-font);
+    font-family: var(--font-outbrave);
     margin-bottom: 25px;
     z-index: 2;
 }
@@ -2425,7 +2426,7 @@ ul {
 .video-one__tagline {
     font-size: 30px;
     color: var(--thm-primary);
-    font-family: var(--thm-reey-font);
+    font-family: var(--font-outbrave);
     margin: 0;
     padding-top: 67px;
     padding-bottom: 33px;
@@ -2546,7 +2547,7 @@ ul {
     color: var(--thm-base);
     font-weight: 400;
     line-height: 40px;
-    font-family: var(--thm-reey-font);
+    font-family: var(--font-outbrave);
 }
 
 
@@ -3013,7 +3014,7 @@ ul {
     margin: 0;
     line-height: 39px;
     text-align: center;
-    font-family: var(--thm-reey-font);
+    font-family: var(--font-outbrave);
     position: relative;
     top: 8px;
 }

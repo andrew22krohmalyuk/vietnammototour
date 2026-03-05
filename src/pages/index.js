@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 
 import { HeaderMobile } from '../components/header-mobile/index';
 import { getUrl } from "../utils/index";
@@ -16,6 +17,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const outBrave = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/outbrave.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/assets/fonts/outbrave.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-outbrave",
+  display: "swap",
+});
+
 export default function Home() {
   const bannerVideoRef = useRef(null);
 
@@ -26,7 +44,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+        className={`${styles.page} ${geistSans.variable} ${geistMono.variable} ${outBrave.variable}`}
       >
       <div className="page-wrapper">
 
@@ -72,7 +90,7 @@ export default function Home() {
                     <div className="row">
                       <div className="col-xl-12">
                         <h2>Travel & Adventures</h2>
-                        <p>Where Would You Like To Go?</p>
+                        <p>Your Next Adventure Starts Here</p>
                       </div>
                     </div>
                   </div>
@@ -331,7 +349,6 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-2.jpg")} alt=""/>
@@ -354,7 +371,6 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-3.jpg")} alt=""/>
@@ -377,7 +393,6 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-
                   <div className="popular-tours__single">
                     <div className="popular-tours__img">
                       <img src={getUrl("assets/images/resources/popular-tours__img-4.jpg")} alt=""/>
