@@ -4,7 +4,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
 import { HeaderMobile } from '../components/header-mobile/index';
+import { DestinationCard } from '../components/destination-card/index';
+import { TourCard } from '../components/tour-card/index';
+
+import { destinationsData, toursData } from '../data/index';
 import { getUrl } from "../utils/index";
+
 import styles from "@/styles/Home.module.css";
 
 const geistSans = Geist({
@@ -33,244 +38,6 @@ const outBrave = localFont({
   variable: "--font-outbrave",
   display: "swap",
 });
-
-// Destinations data
-const destinationsData = [
-  {
-    id: 1,
-    name: "Nha Trang",
-    imageUrl: "https://www.agoda.com/wp-content/uploads/2024/02/Nha-Trang-Cable-Vietnam-1244x700.jpg",
-    tours: 12,
-    width: "285px",
-    height: "285px",
-    colClass: "col-xl-3 col-lg-3"
-  },
-  {
-    id: 2,
-    name: "Dalat",
-    imageUrl: "https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg",
-    tours: 5,
-    width: "580px",
-    height: "285px",
-    colClass: "col-xl-6 col-lg-6"
-  },
-  {
-    id: 3,
-    name: "Mui Ne",
-    imageUrl: "https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp",
-    tours: 12,
-    width: "285px",
-    height: "285px",
-    colClass: "col-xl-3 col-lg-3"
-  },
-  {
-    id: 4,
-    name: "Sai Gon",
-    imageUrl: "https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg",
-    tours: 12,
-    width: "580px",
-    height: "285px",
-    colClass: "col-xl-6 col-lg-6"
-  },
-  {
-    id: 5,
-    name: "Hoi An",
-    imageUrl: "https://cdn.kimkim.com/files/a/content_articles/featured_photos/5022fa3d9e45c25486f8bcc9adcfdb44a09ded12/big-94f2b85fd88b035fb52518c04d9cfd63.jpg",
-    tours: 12,
-    width: "580px",
-    height: "285px",
-    colClass: "col-xl-6 col-lg-6"
-  }
-];
-
-// Tours data
-const toursData = [
-  {
-    id: 1,
-    title: "Nha Trang to Da Lat Tour",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-1.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 2,
-    title: "Explore Dalat",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-2.jpg"),
-    rating: "8.0 Superb",
-    price: 130,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 3,
-    title: "Baho Waterfall",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-3.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 4,
-    title: "Full Day Dalat",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-4.jpg"),
-    rating: "8.0 Superb",
-    price: 80,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 5,
-    title: "Magic of Italy",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-1.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 6,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-2.jpg"),
-    rating: "8.0 Superb",
-    price: 130,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 7,
-    title: "Discover Depth of",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-3.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 8,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-4.jpg"),
-    rating: "8.0 Superb",
-    price: 80,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 9,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-1.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 10,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-2.jpg"),
-    rating: "8.0 Superb",
-    price: 130,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 11,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-3.jpg"),
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 12,
-    title: "National Park 2 Days",
-    imageUrl: getUrl("assets/images/resources/popular-tours__img-4.jpg"),
-    rating: "8.0 Superb",
-    price: 80,
-    duration: "3 Days",
-    people: "12+",
-    location: "Los Angeles"
-  }
-];
-
-// DestinationCard Component
-const DestinationCard = ({ destination }) => {
-  const { name, imageUrl, tours, width, height, colClass } = destination;
-
-  return (
-    <div className={colClass}>
-      <div className="destinations-one__single">
-        <div className="destinations-one__img">
-          <picture style={{ display: 'block', width, height, overflow: 'hidden' }}>
-            <source srcSet={imageUrl} type="image/webp" />
-            <img
-              src={imageUrl}
-              alt={name}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', position: 'absolute' }}
-            />
-            <div style={{ position: 'absolute', inset: 0, background: 'rgba(0, 0, 0, 0.4)' }} />
-          </picture>
-          <div className="destinations-one__content">
-            <h2 className="destinations-one__title">
-              <a href="destinations-details.html">{name}</a>
-            </h2>
-          </div>
-          <div className="destinations-one__button">
-            <a href="#">{tours} tours</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// TourCard Component
-const TourCard = ({ tour }) => {
-  const { title, imageUrl, rating, price, duration, people, location } = tour;
-
-  return (
-    <div className="popular-tours__single">
-      <div className="popular-tours__img">
-        <img src={imageUrl} alt={title} />
-        <div className="popular-tours__icon">
-          <a href="tour-details.html">
-            <i className="fa fa-heart"></i>
-          </a>
-        </div>
-      </div>
-      <div className="popular-tours__content">
-        <div className="popular-tours__stars">
-          <i className="fa fa-star"></i> {rating}
-        </div>
-        <h3 className="popular-tours__title">
-          <a href="tour-details.html">{title}</a>
-        </h3>
-        <p className="popular-tours__rate">
-          <span>${price}</span> / Per Person
-        </p>
-        <ul className="popular-tours__meta list-unstyled">
-          <li><a href="tour-details.html">{duration}</a></li>
-          <li><a href="tour-details.html">{people}</a></li>
-          <li><a href="tour-details.html">{location}</a></li>
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 export default function Home() {
   const bannerVideoRef = useRef(null);
@@ -351,10 +118,10 @@ export default function Home() {
               {/*</div>*/}
             </div>
 
-            <div className="main-slider-nav">
-              <div className="main-slider-button-prev"><span className="icon-right-arrow"></span></div>
-              <div className="main-slider-button-next"><span className="icon-right-arrow"></span></div>
-            </div>
+            {/*<div className="main-slider-nav">*/}
+            {/*  <div className="main-slider-button-prev"><span className="icon-right-arrow"></span></div>*/}
+            {/*  <div className="main-slider-button-next"><span className="icon-right-arrow"></span></div>*/}
+            {/*</div>*/}
           </div>
         </section>
 
@@ -480,7 +247,9 @@ export default function Home() {
                     </a>
                   </div>
                   <p className="video-one__tagline">Are you ready to travel?</p>
-                  <h2 className="video-one__title">Tevily is a World Leading Online Tour Booking Platform</h2>
+                  <h2 className="video-one__title">
+                    We are leading day tour and multi-day tour on organizer in Nha Trang
+                  </h2>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">
