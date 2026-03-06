@@ -2794,9 +2794,9 @@ ul {
 .gallery-one {
     position: relative;
     display: block;
-    padding: 380px 0 90px;
+    padding: 120px 0 90px;
     background-color: #faf5ee;
-    margin-top: -270px;
+    // margin-top: -270px;
 }
 
 .gallery-one-bg {
@@ -2951,6 +2951,8 @@ ul {
 .why-choose {
     position: relative;
     display: block;
+    background: #faf5ee;
+    padding-bottom: 120px;
 }
 
 .why-choose__container {

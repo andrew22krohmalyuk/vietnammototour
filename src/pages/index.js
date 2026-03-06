@@ -286,294 +286,294 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="brand-one">
-          <div className="brand-one-shape"
-               style={{ backgroundImage: "url(assets/images/shapes/brand-one-shape.png)" }}></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-3">
-                <div className="brand-one__title">
-                  <h2>Our partners</h2>
-                </div>
-              </div>
-              <div className="col-xl-9">
-                <div className="brand-one__main-content">
-                  <div className="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                            "0": {
-                                "spaceBetween": 30,
-                                "slidesPerView": 2
-                            },
-                            "375": {
-                                "spaceBetween": 30,
-                                "slidesPerView": 2
-                            },
-                            "575": {
-                                "spaceBetween": 30,
-                                "slidesPerView": 3
-                            },
-                            "767": {
-                                "spaceBetween": 50,
-                                "slidesPerView": 4
-                            },
-                            "991": {
-                                "spaceBetween": 50,
-                                "slidesPerView": 5
-                            },
-                            "1199": {
-                                "spaceBetween": 50,
-                                "slidesPerView": 5
-                            }
-                        }}'>
-                    <div className="swiper-wrapper">
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-1.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-2.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-3.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-4.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-5.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-1.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-2.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-3.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-4.png")} alt=""/>
-                      </div>
-                      <div className="swiper-slide">
-                        <img src={getUrl("assets/images/brand/brand-one-5.png")} alt=""/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*<section className="brand-one">*/}
+        {/*  <div className="brand-one-shape"*/}
+        {/*       style={{ backgroundImage: "url(assets/images/shapes/brand-one-shape.png)" }}></div>*/}
+        {/*  <div className="container">*/}
+        {/*    <div className="row">*/}
+        {/*      <div className="col-xl-3">*/}
+        {/*        <div className="brand-one__title">*/}
+        {/*          <h2>Our partners</h2>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-xl-9">*/}
+        {/*        <div className="brand-one__main-content">*/}
+        {/*          <div className="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {*/}
+        {/*                    "0": {*/}
+        {/*                        "spaceBetween": 30,*/}
+        {/*                        "slidesPerView": 2*/}
+        {/*                    },*/}
+        {/*                    "375": {*/}
+        {/*                        "spaceBetween": 30,*/}
+        {/*                        "slidesPerView": 2*/}
+        {/*                    },*/}
+        {/*                    "575": {*/}
+        {/*                        "spaceBetween": 30,*/}
+        {/*                        "slidesPerView": 3*/}
+        {/*                    },*/}
+        {/*                    "767": {*/}
+        {/*                        "spaceBetween": 50,*/}
+        {/*                        "slidesPerView": 4*/}
+        {/*                    },*/}
+        {/*                    "991": {*/}
+        {/*                        "spaceBetween": 50,*/}
+        {/*                        "slidesPerView": 5*/}
+        {/*                    },*/}
+        {/*                    "1199": {*/}
+        {/*                        "spaceBetween": 50,*/}
+        {/*                        "slidesPerView": 5*/}
+        {/*                    }*/}
+        {/*                }}'>*/}
+        {/*            <div className="swiper-wrapper">*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-1.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-2.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-3.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-4.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-5.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-1.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-2.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-3.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-4.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*              <div className="swiper-slide">*/}
+        {/*                <img src={getUrl("assets/images/brand/brand-one-5.png")} alt=""/>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
-        <section className="testimonial-one">
-          <div className="testimonial-one-shape-2 float-bob-y">
-            <img src={getUrl("assets/images/shapes/testimonial-one-shape-2.png")} alt=""/>
-          </div>
-          <div className="testimonial-one-shape-3 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
-            <img src={getUrl("assets/images/shapes/testimonial-one-shape-3.png")} alt=""/>
-          </div>
-          <div className="container">
-            <div className="section-title text-center">
-              <span className="section-title__tagline">Testimonials & reviews</span>
-              <h2 className="section-title__title">What They’re Saying</h2>
-            </div>
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="testimonial-one__carousel owl-theme owl-carousel">
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Shirley Smith</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Kevin Martin</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Jessica Brown</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Shirley Smith</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Kevin Martin</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Jessica Brown</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Shirley Smith</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Kevin Martin</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-one__single">
-                    <div className="testimonial-one__img">
-                      <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>
-                    </div>
-                    <div className="testimonail-one__content">
-                      <div className="testimonial-one__top-revivew-box">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                      </div>
-                      <p className="testimonial-one__text">This is due to their best service, pricing and
-                        customer support. It’s throughly refresing to such a personal touch. Duis aute
-                        irure lupsum reprehenderit.</p>
-                      <div className="testimonial-one__client-info">
-                        <h3 className="testimonial-one__client-name">Jessica Brown</h3>
-                        <p className="testimonial-one__client-title">Customer</p>
-                      </div>
-                    </div>
-                  </div>
+        {/*<section className="testimonial-one">*/}
+        {/*  <div className="testimonial-one-shape-2 float-bob-y">*/}
+        {/*    <img src={getUrl("assets/images/shapes/testimonial-one-shape-2.png")} alt=""/>*/}
+        {/*  </div>*/}
+        {/*  <div className="testimonial-one-shape-3 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">*/}
+        {/*    <img src={getUrl("assets/images/shapes/testimonial-one-shape-3.png")} alt=""/>*/}
+        {/*  </div>*/}
+        {/*  <div className="container">*/}
+        {/*    <div className="section-title text-center">*/}
+        {/*      <span className="section-title__tagline">Testimonials & reviews</span>*/}
+        {/*      <h2 className="section-title__title">What They’re Saying</h2>*/}
+        {/*    </div>*/}
+        {/*    <div className="row">*/}
+        {/*      <div className="col-xl-12">*/}
+        {/*        <div className="testimonial-one__carousel owl-theme owl-carousel">*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Shirley Smith</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Kevin Martin</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Jessica Brown</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Shirley Smith</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Kevin Martin</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Jessica Brown</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-1.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Shirley Smith</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-2.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Kevin Martin</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*          <div className="testimonial-one__single">*/}
+        {/*            <div className="testimonial-one__img">*/}
+        {/*              <img src={getUrl("assets/images/testimonial/testimonial-one-img-3.png")} alt=""/>*/}
+        {/*            </div>*/}
+        {/*            <div className="testimonail-one__content">*/}
+        {/*              <div className="testimonial-one__top-revivew-box">*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*                <i className="fa fa-star"></i>*/}
+        {/*              </div>*/}
+        {/*              <p className="testimonial-one__text">This is due to their best service, pricing and*/}
+        {/*                customer support. It’s throughly refresing to such a personal touch. Duis aute*/}
+        {/*                irure lupsum reprehenderit.</p>*/}
+        {/*              <div className="testimonial-one__client-info">*/}
+        {/*                <h3 className="testimonial-one__client-name">Jessica Brown</h3>*/}
+        {/*                <p className="testimonial-one__client-title">Customer</p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
 
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
         <section className="gallery-one">
           <div className="gallery-one-bg" style={{ backgroundImage: "url(assets/images/shapes/gallery-map.png)" }}></div>
@@ -675,100 +675,100 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="news-one">
-          <div className="container">
-            <div className="news-one__top">
-              <div className="row">
-                <div className="col-xl-9 col-lg-9">
-                  <div className="news-one__top-left">
-                    <div className="section-title text-left">
-                      <span className="section-title__tagline">From the blog post</span>
-                      <h2 className="section-title__title">News & Articles</h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-3">
-                  <div className="news-one__top-right">
-                    <a href="news-details.html" className="news-one__btn thm-btn">View All posts</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="news-one__bottom">
-              <div className="row">
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                  <div className="news-one__single">
-                    <div className="news-one__img">
-                      <img src={getUrl("assets/images/blog/news-one-img-1.jpg")} alt=""/>
-                      <a href="news-details.html">
-                        <span className="news-one__plus"></span>
-                      </a>
-                      <div className="news-one__date">
-                        <p>28 <br/> <span>Aug</span></p>
-                      </div>
-                    </div>
-                    <div className="news-one__content">
-                      <ul className="list-unstyled news-one__meta">
-                        <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>
-                        <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>
-                        </li>
-                      </ul>
-                      <h3 className="news-one__title">
-                        <a href="news-details.html">Things to See and Do When Visiting Japan</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                  <div className="news-one__single">
-                    <div className="news-one__img">
-                      <img src={getUrl("assets/images/blog/news-one-img-2.jpg")} alt=""/>
-                      <a href="news-details.html">
-                        <span className="news-one__plus"></span>
-                      </a>
-                      <div className="news-one__date">
-                        <p>28 <br/> <span>Aug</span></p>
-                      </div>
-                    </div>
-                    <div className="news-one__content">
-                      <ul className="list-unstyled news-one__meta">
-                        <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>
-                        <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>
-                        </li>
-                      </ul>
-                      <h3 className="news-one__title">
-                        <a href="news-details.html">Journeys are Best Measured in New Friends</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                  <div className="news-one__single">
-                    <div className="news-one__img">
-                      <img src={getUrl("assets/images/blog/news-one-img-3.jpg")} alt=""/>
-                      <a href="news-details.html">
-                        <span className="news-one__plus"></span>
-                      </a>
-                      <div className="news-one__date">
-                        <p>28 <br/> <span>Aug</span></p>
-                      </div>
-                    </div>
-                    <div className="news-one__content">
-                      <ul className="list-unstyled news-one__meta">
-                        <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>
-                        <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>
-                        </li>
-                      </ul>
-                      <h3 className="news-one__title">
-                        <a href="news-details.html">Travel the Most Beautiful Places in the World</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*<section className="news-one">*/}
+        {/*  <div className="container">*/}
+        {/*    <div className="news-one__top">*/}
+        {/*      <div className="row">*/}
+        {/*        <div className="col-xl-9 col-lg-9">*/}
+        {/*          <div className="news-one__top-left">*/}
+        {/*            <div className="section-title text-left">*/}
+        {/*              <span className="section-title__tagline">From the blog post</span>*/}
+        {/*              <h2 className="section-title__title">News & Articles</h2>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="col-xl-3 col-lg-3">*/}
+        {/*          <div className="news-one__top-right">*/}
+        {/*            <a href="news-details.html" className="news-one__btn thm-btn">View All posts</a>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="news-one__bottom">*/}
+        {/*      <div className="row">*/}
+        {/*        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">*/}
+        {/*          <div className="news-one__single">*/}
+        {/*            <div className="news-one__img">*/}
+        {/*              <img src={getUrl("assets/images/blog/news-one-img-1.jpg")} alt=""/>*/}
+        {/*              <a href="news-details.html">*/}
+        {/*                <span className="news-one__plus"></span>*/}
+        {/*              </a>*/}
+        {/*              <div className="news-one__date">*/}
+        {/*                <p>28 <br/> <span>Aug</span></p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="news-one__content">*/}
+        {/*              <ul className="list-unstyled news-one__meta">*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>*/}
+        {/*                </li>*/}
+        {/*              </ul>*/}
+        {/*              <h3 className="news-one__title">*/}
+        {/*                <a href="news-details.html">Things to See and Do When Visiting Japan</a>*/}
+        {/*              </h3>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">*/}
+        {/*          <div className="news-one__single">*/}
+        {/*            <div className="news-one__img">*/}
+        {/*              <img src={getUrl("assets/images/blog/news-one-img-2.jpg")} alt=""/>*/}
+        {/*              <a href="news-details.html">*/}
+        {/*                <span className="news-one__plus"></span>*/}
+        {/*              </a>*/}
+        {/*              <div className="news-one__date">*/}
+        {/*                <p>28 <br/> <span>Aug</span></p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="news-one__content">*/}
+        {/*              <ul className="list-unstyled news-one__meta">*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>*/}
+        {/*                </li>*/}
+        {/*              </ul>*/}
+        {/*              <h3 className="news-one__title">*/}
+        {/*                <a href="news-details.html">Journeys are Best Measured in New Friends</a>*/}
+        {/*              </h3>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">*/}
+        {/*          <div className="news-one__single">*/}
+        {/*            <div className="news-one__img">*/}
+        {/*              <img src={getUrl("assets/images/blog/news-one-img-3.jpg")} alt=""/>*/}
+        {/*              <a href="news-details.html">*/}
+        {/*                <span className="news-one__plus"></span>*/}
+        {/*              </a>*/}
+        {/*              <div className="news-one__date">*/}
+        {/*                <p>28 <br/> <span>Aug</span></p>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="news-one__content">*/}
+        {/*              <ul className="list-unstyled news-one__meta">*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-user-circle"></i>Admin</a></li>*/}
+        {/*                <li><a href="news-details.html"><i className="far fa-comments"></i>2 Comments</a>*/}
+        {/*                </li>*/}
+        {/*              </ul>*/}
+        {/*              <h3 className="news-one__title">*/}
+        {/*                <a href="news-details.html">Travel the Most Beautiful Places in the World</a>*/}
+        {/*              </h3>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
       </div>
 
