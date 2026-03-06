@@ -233,7 +233,7 @@ export default function Home() {
 
         <section className="video-one">
           <div className="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-               style={{ backgroundImage: "url(assets/images/backgrounds/video-one-bg.jpg);" }}></div>
+               style={{ backgroundImage: "url(assets/images/backgrounds/video-one-bg.jpg)" }}></div>
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6">
@@ -288,7 +288,7 @@ export default function Home() {
 
         <section className="brand-one">
           <div className="brand-one-shape"
-               style={{ backgroundImage: "url(assets/images/shapes/brand-one-shape.png);" }}></div>
+               style={{ backgroundImage: "url(assets/images/shapes/brand-one-shape.png)" }}></div>
           <div className="container">
             <div className="row">
               <div className="col-xl-3">
@@ -576,7 +576,7 @@ export default function Home() {
         </section>
 
         <section className="gallery-one">
-          <div className="gallery-one-bg" style={{ backgroundImage: "url(assets/images/shapes/gallery-map.png);" }}></div>
+          <div className="gallery-one-bg" style={{ backgroundImage: "url(assets/images/shapes/gallery-map.png)" }}></div>
           <div className="gallery-one__container-box clearfix">
             <ul className="list-unstyled gallery-one__content clearfix">
               <li className="wow fadeInUp" data-wow-delay="100ms">

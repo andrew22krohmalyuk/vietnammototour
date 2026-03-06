@@ -1,6 +1,9 @@
 import Script from 'next/script';
 import { getUrl } from "@/utils";
 import { HeaderMobile } from "@/components/header-mobile";
+import {toursData} from "@/data";
+import {TourCard} from "@/components/tour-card";
+import React from "react";
 
 export default function Tours() {
   return (
@@ -38,155 +41,15 @@ export default function Tours() {
         <section className="popular-tours-two">
           <div className="container">
             <div className="row">
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-1.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">National Park 2 Days
-                      Tour</a></h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
+              {toursData.map((tour) => (
+                <div
+                  key={tour.id}
+                  className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                  data-wow-delay={`${tour.id}00ms`}
+                >
+                  <TourCard tour={tour} />
                 </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-2.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">The Dark Forest</a></h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-3.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">Discover Depth of Beach</a>
-                    </h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-4.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">Moscow Red City Land</a>
-                    </h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-5.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">Magic of Italy Tours</a>
-                    </h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="600ms">
-                <div className="popular-tours__single">
-                  <div className="popular-tours__img">
-                    <img src="assets/images/resources/popular-tours-two__img-6.jpg" alt=""/>
-                    <div className="popular-tours__icon">
-                      <a href="tour-details.html">
-                        <i className="fa fa-heart"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="popular-tours__content">
-                    <div className="popular-tours__stars">
-                      <i className="fa fa-star"></i> 8.0 Superb
-                    </div>
-                    <h3 className="popular-tours__title"><a href="tour-details.html">Discover Depth of Beach</a>
-                    </h3>
-                    <p className="popular-tours__rate"><span>$1870</span> / Per Person</p>
-                    <ul className="popular-tours__meta list-unstyled">
-                      <li><a href="tour-details.html">3 Days</a></li>
-                      <li><a href="tour-details.html">12+</a></li>
-                      <li><a href="tour-details.html">Los Angeles</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
