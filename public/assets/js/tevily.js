@@ -216,40 +216,40 @@
 
 
 
-  // Popular Tour Carousel
-  if ($(".popular-tours__carousel").length) {
-    $(".popular-tours__carousel").owlCarousel({
-      loop: true,
-      margin: 30,
-      nav: false,
-      smartSpeed: 500,
-      autoHeight: false,
-      autoplay: true,
-      dots: true,
-      autoplayTimeout: 10000,
-      navText: [
-        '<span class="icon-left-arrow"></span>',
-        '<span class="icon-right-arrow"></span>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        800: {
-          items: 2,
-        },
-        1024: {
-          items: 2,
-        },
-        1200: {
-          items: 4,
-        },
-      },
-    });
-  }
+  // // Popular Tour Carousel
+  // if ($(".popular-tours__carousel").length) {
+  //   $(".popular-tours__carousel").owlCarousel({
+  //     loop: true,
+  //     margin: 30,
+  //     nav: false,
+  //     smartSpeed: 500,
+  //     autoHeight: false,
+  //     autoplay: true,
+  //     dots: true,
+  //     autoplayTimeout: 10000,
+  //     navText: [
+  //       '<span class="icon-left-arrow"></span>',
+  //       '<span class="icon-right-arrow"></span>',
+  //     ],
+  //     responsive: {
+  //       0: {
+  //         items: 1,
+  //       },
+  //       600: {
+  //         items: 1,
+  //       },
+  //       800: {
+  //         items: 2,
+  //       },
+  //       1024: {
+  //         items: 2,
+  //       },
+  //       1200: {
+  //         items: 4,
+  //       },
+  //     },
+  //   });
+  // }
 
 
   // Testimonial One Carousel
@@ -725,7 +725,7 @@
     if ($(".preloader").length) {
       $(".preloader").fadeOut();
     }
-    thmSwiperInit();
+    // thmSwiperInit();
     thmTinyInit();
     thmTestimonialsThumbCarousel();
     projectMasonaryLayout();

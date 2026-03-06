@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 
 import { HeaderMobile } from '../components/header-mobile/index';
 import { DestinationCard } from '../components/destination-card/index';
-import { TourCard } from '../components/tour-card/index';
+import { TourCarousel } from '../components/tour-carousel/index';
 
 import { destinationsData, toursData } from '../data/index';
 import { getUrl } from "../utils/index";
@@ -221,11 +221,7 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-xl-12">
-                <div className="popular-tours__carousel owl-theme owl-carousel">
-                  {toursData.map((tour) => (
-                    <TourCard key={tour.id} tour={tour} />
-                  ))}
-                </div>
+                <TourCarousel tours={toursData} />
               </div>
             </div>
           </div>
@@ -797,13 +793,13 @@ export default function Home() {
       <Script src={getUrl("assets/vendors/jquery-validate/jquery.validate.min.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/nouislider/nouislider.min.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/odometer/odometer.min.js")} strategy="afterInteractive"></Script>
-      <Script src={getUrl("assets/vendors/swiper/swiper.min.js")} strategy="afterInteractive"></Script>
+      {/*<Script src={getUrl("assets/vendors/swiper/swiper.min.js")} strategy="afterInteractive"></Script>*/}
       <Script src={getUrl("assets/vendors/tiny-slider/tiny-slider.min.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/wnumb/wNumb.min.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/wow/wow.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/isotope/isotope.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/countdown/countdown.min.js")} strategy="afterInteractive"></Script>
-      <Script src={getUrl("assets/vendors/owl-carousel/owl.carousel.min.js")} strategy="afterInteractive"></Script>
+      {/*<Script src={getUrl("assets/vendors/owl-carousel/owl.carousel.min.js")} strategy="afterInteractive"></Script>*/}
       <Script src={getUrl("assets/vendors/twentytwenty/twentytwenty.js")} strategy="afterInteractive"></Script>
       <Script src={getUrl("assets/vendors/twentytwenty/jquery.event.move.js")} strategy="beforeInteractive"></Script>
       <Script src={getUrl("assets/vendors/bxslider/jquery.bxslider.min.js")} strategy="afterInteractive"></Script>
