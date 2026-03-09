@@ -228,14 +228,14 @@ export default function Home() {
         </section>
 
         <section className="video-one">
-          <div className="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-               style={{ backgroundImage: "url(assets/images/backgrounds/video-one-bg.jpg)" }}></div>
+          <div className="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
+               style={{ backgroundImage: `url(${getUrl('assets/images/backgrounds/video-one-bg-0.jpeg')})` }}></div>
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6">
                 <div className="video-one__left">
                   <div className="video-one__video-link">
-                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                    <a href="https://www.youtube.com/watch?v=fXvp76BQ2Fk" target="_blank" className="video-popup">
                       <div className="video-one__video-icon">
                         <span className="icon-play-button"></span>
                         <i className="ripple"></i>
@@ -253,15 +253,15 @@ export default function Home() {
                   <ul className="list-unstyled video-one__four-icon-boxes">
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-deer"></span>
+                        <span className="icon-travel-map"></span>
                       </div>
                       <h4 className="video-one__icon-box-title"><a href="#">Wildlife <br/> Tours</a></h4>
                     </li>
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-paragliding"></span>
+                        <span className="icon-place"></span>
                       </div>
-                      <h4 className="video-one__icon-box-title"><a href="#">Paragliding <br/> Tours</a></h4>
+                      <h4 className="video-one__icon-box-title"><a href="#">Bike <br/> Tours</a></h4>
                     </li>
                     <li>
                       <div className="video-one__icon-box">
@@ -271,9 +271,9 @@ export default function Home() {
                     </li>
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-hang-gliding"></span>
+                        <span className="icon-clock"></span>
                       </div>
-                      <h4 className="video-one__icon-box-title"><a href="#">Hang Gliding <br/> Tours</a></h4>
+                      <h4 className="video-one__icon-box-title"><a href="#">Full day <br/> Tours</a></h4>
                     </li>
                   </ul>
                 </div>
@@ -572,7 +572,7 @@ export default function Home() {
         {/*</section>*/}
 
         <section className="gallery-one">
-          <div className="gallery-one-bg" style={{ backgroundImage: "url(assets/images/shapes/gallery-map.png)" }}></div>
+          <div className="gallery-one-bg" style={{ backgroundImage: `url(${getUrl('assets/images/shapes/gallery-map.png')})` }}></div>
           <div className="gallery-one__container-box clearfix">
             <ul className="list-unstyled gallery-one__content clearfix">
               <li className="wow fadeInUp" data-wow-delay="100ms">
@@ -635,7 +635,7 @@ export default function Home() {
             </div>
             <div className="why-choose__right">
               <div className="why-choose__right-map"
-                   style={{ backgroundImage: "url(assets/images/shapes/why-choose-right-map.png)" }}></div>
+                   style={{ backgroundImage: `url(${getUrl('assets/images/shapes/why-choose-right-map.png')})` }}></div>
               <div className="why-choose__right-content">
                 <div className="section-title text-left">
                   <span className="section-title__tagline">Our benefit lists</span>
