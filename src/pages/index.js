@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import { HeaderMobile } from '../components/header-mobile/index';
 import { DestinationCard } from '../components/destination-card/index';
 import { TourCarousel } from '../components/tour-carousel/index';
+import { GalleryItem } from '../components/gallery-item/index';
 
 import { destinationsData, toursData } from '../data/index';
 import { getUrl } from "../utils/index";
@@ -41,6 +42,15 @@ const outBrave = localFont({
 
 export default function Home() {
   const bannerVideoRef = useRef(null);
+
+  // Gallery images data
+  const galleryImages = [
+    getUrl('assets/images/gallery/gallery-one-img-1.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-2.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-3.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-4.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-5.jpeg'),
+  ];
 
   useEffect(() => {
     bannerVideoRef.current.playbackRate = 0.8;
@@ -228,14 +238,14 @@ export default function Home() {
         </section>
 
         <section className="video-one">
-          <div className="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-               style={{ backgroundImage: "url(assets/images/backgrounds/video-one-bg.jpg)" }}></div>
+          <div className="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
+               style={{ backgroundImage: `url(${getUrl('assets/images/backgrounds/video-one-bg-0.jpeg')})` }}></div>
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6">
                 <div className="video-one__left">
                   <div className="video-one__video-link">
-                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                    <a href="https://www.youtube.com/watch?v=fXvp76BQ2Fk" target="_blank" className="video-popup">
                       <div className="video-one__video-icon">
                         <span className="icon-play-button"></span>
                         <i className="ripple"></i>
@@ -253,15 +263,15 @@ export default function Home() {
                   <ul className="list-unstyled video-one__four-icon-boxes">
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-deer"></span>
+                        <span className="icon-travel-map"></span>
                       </div>
                       <h4 className="video-one__icon-box-title"><a href="#">Wildlife <br/> Tours</a></h4>
                     </li>
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-paragliding"></span>
+                        <span className="icon-place"></span>
                       </div>
-                      <h4 className="video-one__icon-box-title"><a href="#">Paragliding <br/> Tours</a></h4>
+                      <h4 className="video-one__icon-box-title"><a href="#">Bike <br/> Tours</a></h4>
                     </li>
                     <li>
                       <div className="video-one__icon-box">
@@ -271,9 +281,9 @@ export default function Home() {
                     </li>
                     <li>
                       <div className="video-one__icon-box">
-                        <span className="icon-hang-gliding"></span>
+                        <span className="icon-clock"></span>
                       </div>
-                      <h4 className="video-one__icon-box-title"><a href="#">Hang Gliding <br/> Tours</a></h4>
+                      <h4 className="video-one__icon-box-title"><a href="#">Full day <br/> Tours</a></h4>
                     </li>
                   </ul>
                 </div>
@@ -572,54 +582,16 @@ export default function Home() {
         {/*</section>*/}
 
         <section className="gallery-one">
-          <div className="gallery-one-bg" style={{ backgroundImage: "url(assets/images/shapes/gallery-map.png)" }}></div>
+          <div className="gallery-one-bg" style={{ backgroundImage: `url(${getUrl('assets/images/shapes/gallery-map.png')})` }}></div>
           <div className="gallery-one__container-box clearfix">
             <ul className="list-unstyled gallery-one__content clearfix">
-              <li className="wow fadeInUp" data-wow-delay="100ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-1.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-1.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="200ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-2.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-2.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="300ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-3.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-3.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="400ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-4.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-4.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="500ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-5.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-5.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
+              {galleryImages.map((imageSrc, index) => (
+                <GalleryItem
+                  key={index}
+                  imageSrc={imageSrc}
+                  delay={(index + 1) * 100}
+                />
+              ))}
             </ul>
           </div>
         </section>
@@ -635,34 +607,34 @@ export default function Home() {
             </div>
             <div className="why-choose__right">
               <div className="why-choose__right-map"
-                   style={{ backgroundImage: "url(assets/images/shapes/why-choose-right-map.png)" }}></div>
+                   style={{ backgroundImage: `url(${getUrl('assets/images/shapes/why-choose-right-map.png')})` }}></div>
               <div className="why-choose__right-content">
                 <div className="section-title text-left">
                   <span className="section-title__tagline">Our benefit lists</span>
-                  <h2 className="section-title__title">Why Choose Tevily</h2>
+                  <h2 className="section-title__title">Why Choose Us</h2>
                 </div>
-                <p className="why-choose__right-text">There are many variations of passages of Lorem Ipsum is simply
-                  free text available in the market for you, but the majority have suffered alteration in some
-                  form.</p>
+                <p className="why-choose__right-text">
+                  Our team is highly skilled in crafting and leading motorcycle tours. With over 10 years of varied riding experience, we know these roads inside and out
+                </p>
                 <ul className="list-unstyled why-choose__list">
-                  <li>
-                    <div className="icon">
-                      <span className="icon-travel"></span>
-                    </div>
-                    <div className="text">
-                      <h4>Professional and Certified</h4>
-                      <p>Lorem ipsum is simply free text dolor sit but the majority have suffered amet,
-                        consectetur notted.</p>
-                    </div>
-                  </li>
                   <li>
                     <div className="icon">
                       <span className="icon-travel-map"></span>
                     </div>
                     <div className="text">
+                      <h4>Professional and Certified</h4>
+                      <p>
+                        We are specialized Motorcycle Tour Company, dedicated to delivering a unique adventure motorcycle experiences
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <span className="icon-phone-call"></span>
+                    </div>
+                    <div className="text">
                       <h4>Get Instant Tour Bookings</h4>
-                      <p>Lorem ipsum is simply free text dolor sit but the majority have suffered amet,
-                        consectetur notted.</p>
+                      <p>Our journey starts and ends in anywhere Vietnam.</p>
                     </div>
                   </li>
                 </ul>

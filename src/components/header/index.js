@@ -35,7 +35,7 @@ export const Header = () => {
                 <div className="main-header__top-right-social">
                   <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
                   <a href="#"><i className="fab fa-tripadvisor"></i></a>
-                  <a href="#"><i className="fab fa-instagram"></i></a>
+                  <a href="#"><i className="fab fa-whatsapp"></i></a>
                 </div>
               </div>
             </div>

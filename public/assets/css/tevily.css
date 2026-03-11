@@ -2245,20 +2245,21 @@ ul {
 
 .popular-tours__meta {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    /*align-items: center;*/
     background-color: #faf5ee;
     border-radius: var(--thm-border-radius);
-    padding: 0 28px 0;
+    /*padding: 0 28px 0;*/
     margin-top: 19px;
 }
 
 
 
 .popular-tours__meta li+li {
-    margin-left: 35px;
+    /*margin-left: 35px;*/
 }
 
-.popular-tours__meta li a {
+.popular-tours__meta li {
     font-size: 12px;
     color: var(--thm-gray);
     font-weight: 500;
