@@ -1,7 +1,7 @@
 import React from "react";
 
 export const TourCard = ({ tour }) => {
-  const { title, imageUrl, rating, price, duration, people, location } = tour;
+  const { title, imageUrl, rating, price, duration, distance, location } = tour;
 
   return (
     <div className="popular-tours__single">
@@ -32,9 +32,9 @@ export const TourCard = ({ tour }) => {
           <span>${price}</span> / Per Person
         </p>
         <ul className="popular-tours__meta list-unstyled">
-          <li><a href="tour-details.html">{duration}</a></li>
-          <li><a href="tour-details.html">{people}</a></li>
-          <li><a href="tour-details.html">{location}</a></li>
+          <li>{duration}</li>
+          <li>{distance}</li>
+          <li>{location}</li>
         </ul>
       </div>
     </div>

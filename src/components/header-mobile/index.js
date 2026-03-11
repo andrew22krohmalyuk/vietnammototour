@@ -27,7 +27,7 @@ export function HeaderMobile() {
           <div className="mobile-nav__social">
             <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ" className="fab fa-youtube"></a>
             <a href="#" className="fab fa-tripadvisor"></a>
-            <a href="#" className="fab fa-instagram"></a>
+            <a href="#" className="fab fa-whatsapp"></a>
           </div>
         </div>
       </div>

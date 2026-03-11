@@ -53,23 +53,23 @@ export const destinationsData = [
 export const toursData = [
   {
     id: 1,
-    title: "Nha Trang to Da Lat Tour",
+    title: "Da Lat Tour",
     imageUrl: 'https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg',
-    rating: "8.0 Superb",
-    price: 70,
+    rating: "8.1 Superb",
+    price: 80,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "186 Miles",
+    location: "Da Lat"
   },
   {
     id: 2,
-    title: "Explore Dalat",
+    title: "2d Explore Da Lat",
     imageUrl: 'https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg',
-    rating: "8.0 Superb",
+    rating: "8.2 Superb",
     price: 130,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "210 Miles",
+    location: "Omega Pass"
   },
   {
     id: 3,
@@ -78,97 +78,47 @@ export const toursData = [
     rating: "8.0 Superb",
     price: 70,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "50 Miles",
+    location: "Nha Trang"
   },
   {
     id: 4,
-    title: "Nha Trang to Da Lat Tour",
+    title: "1d Motor NT-DL",
     imageUrl: 'https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg',
-    rating: "8.0 Superb",
+    rating: "8.3 Superb",
     price: 70,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "93 Miles",
+    location: "Nha Trang"
   },
   {
     id: 5,
-    title: "Explore Dalat",
+    title: "Nha Trang Tour",
     imageUrl: 'https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg',
-    rating: "8.0 Superb",
-    price: 130,
+    rating: "7.9 Superb",
+    price: 40,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "25 Miles",
+    location: "Nha Trang"
   },
   {
     id: 6,
-    title: "Baho Waterfall",
+    title: "Honba Waterfall",
     imageUrl: 'https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp',
     rating: "8.0 Superb",
     price: 70,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
+    distance: "25 Miles",
+    location: "La Lo Pagoda"
   },
   {
     id: 7,
-    title: "Nha Trang to Da Lat Tour",
+    title: "Eco Day Tour",
     imageUrl: 'https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg',
     rating: "8.0 Superb",
-    price: 70,
+    price: 65,
     duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 8,
-    title: "Explore Dalat",
-    imageUrl: 'https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg',
-    rating: "8.0 Superb",
-    price: 130,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 9,
-    title: "Baho Waterfall",
-    imageUrl: 'https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp',
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 10,
-    title: "Nha Trang to Da Lat Tour",
-    imageUrl: 'https://cdnen.thesaigontimes.vn/wp-content/uploads/2024/07/Mot-thoang-Ho-Ba-Be_Thong-Lam.jpg',
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 11,
-    title: "Explore Dalat",
-    imageUrl: 'https://localvietnam.de/wp-content/uploads/2023/09/tuyen-lam-see-1-1024x683.jpg',
-    rating: "8.0 Superb",
-    price: 130,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
-  {
-    id: 12,
-    title: "Baho Waterfall",
-    imageUrl: 'https://images.ctfassets.net/wv75stsetqy3/6gzFoj0ORIEj3yIGsB1Q08/5797e277832264a11c9bae10fb2f7772/Retire_in_Mui_Ne.jpg?q=60&fit=fill&fm=webp',
-    rating: "8.0 Superb",
-    price: 70,
-    duration: "1 Day",
-    people: "12+",
-    location: "Los Angeles"
-  },
+    distance: "80 Miles",
+    location: "La Lo pagoda"
+  }
 ];
