@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import { HeaderMobile } from '../components/header-mobile/index';
 import { DestinationCard } from '../components/destination-card/index';
 import { TourCarousel } from '../components/tour-carousel/index';
+import { GalleryItem } from '../components/gallery-item/index';
 
 import { destinationsData, toursData } from '../data/index';
 import { getUrl } from "../utils/index";
@@ -41,6 +42,15 @@ const outBrave = localFont({
 
 export default function Home() {
   const bannerVideoRef = useRef(null);
+
+  // Gallery images data
+  const galleryImages = [
+    getUrl('assets/images/gallery/gallery-one-img-1.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-2.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-3.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-4.jpeg'),
+    getUrl('assets/images/gallery/gallery-one-img-5.jpeg'),
+  ];
 
   useEffect(() => {
     bannerVideoRef.current.playbackRate = 0.8;
@@ -575,51 +585,13 @@ export default function Home() {
           <div className="gallery-one-bg" style={{ backgroundImage: `url(${getUrl('assets/images/shapes/gallery-map.png')})` }}></div>
           <div className="gallery-one__container-box clearfix">
             <ul className="list-unstyled gallery-one__content clearfix">
-              <li className="wow fadeInUp" data-wow-delay="100ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-1.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-1.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="200ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-2.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-2.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="300ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-3.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-3.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="400ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-4.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-4.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
-              <li className="wow fadeInUp" data-wow-delay="500ms">
-                <div className="gallery-one__img-box">
-                  <img src={getUrl("assets/images/gallery/gallery-one-img-5.jpg")} alt=""/>
-                  <div className="gallery-one__iocn">
-                    <a className="img-popup" href={getUrl("assets/images/gallery/gallery-one-img-5.jpg")}><i
-                      className="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </li>
+              {galleryImages.map((imageSrc, index) => (
+                <GalleryItem
+                  key={index}
+                  imageSrc={imageSrc}
+                  delay={(index + 1) * 100}
+                />
+              ))}
             </ul>
           </div>
         </section>
