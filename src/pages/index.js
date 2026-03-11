@@ -611,30 +611,30 @@ export default function Home() {
               <div className="why-choose__right-content">
                 <div className="section-title text-left">
                   <span className="section-title__tagline">Our benefit lists</span>
-                  <h2 className="section-title__title">Why Choose Tevily</h2>
+                  <h2 className="section-title__title">Why Choose Us</h2>
                 </div>
-                <p className="why-choose__right-text">There are many variations of passages of Lorem Ipsum is simply
-                  free text available in the market for you, but the majority have suffered alteration in some
-                  form.</p>
+                <p className="why-choose__right-text">
+                  Our team is highly skilled in crafting and leading motorcycle tours. With over 10 years of varied riding experience, we know these roads inside and out
+                </p>
                 <ul className="list-unstyled why-choose__list">
-                  <li>
-                    <div className="icon">
-                      <span className="icon-travel"></span>
-                    </div>
-                    <div className="text">
-                      <h4>Professional and Certified</h4>
-                      <p>Lorem ipsum is simply free text dolor sit but the majority have suffered amet,
-                        consectetur notted.</p>
-                    </div>
-                  </li>
                   <li>
                     <div className="icon">
                       <span className="icon-travel-map"></span>
                     </div>
                     <div className="text">
+                      <h4>Professional and Certified</h4>
+                      <p>
+                        We are specialized Motorcycle Tour Company, dedicated to delivering a unique adventure motorcycle experiences
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <span className="icon-phone-call"></span>
+                    </div>
+                    <div className="text">
                       <h4>Get Instant Tour Bookings</h4>
-                      <p>Lorem ipsum is simply free text dolor sit but the majority have suffered amet,
-                        consectetur notted.</p>
+                      <p>Our journey starts and ends in anywhere Vietnam.</p>
                     </div>
                   </li>
                 </ul>

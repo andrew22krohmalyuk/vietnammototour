@@ -16,7 +16,7 @@ export const GalleryItem = ({ imageSrc, delay }) => {
 
         <div className="gallery-one__iocn">
           <a className="img-popup" href={getUrl(imageSrc)}>
-            <i className="fab fa-instagram"></i>
+            <i className="fab fa-whatsapp"></i>
           </a>
         </div>
       </div>

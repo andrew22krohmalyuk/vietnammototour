@@ -17,8 +17,9 @@ export const Footer = () => (
                     />
                   </Link>
                 </div>
-                <p className="footer-widget__about-text">Welcome to our Trip and Tour Agency. Lorem
-                  simply text amet cing elit.</p>
+                <p className="footer-widget__about-text">
+                  Our Guides have many years of experience motorcycling and was established in 2008
+                </p>
                 <ul className="footer-widget__about-contact list-unstyled">
                   <li>
                     <div className="icon">
@@ -60,10 +61,9 @@ export const Footer = () => (
                 <h3 className="footer-widget__title">Company</h3>
                 <ul className="footer-widget__company-list list-unstyled">
                   <li><a href="about.html">About Us</a></li>
-                  <li><a href="#">Community Blog</a></li>
-                  <li><a href="#">Rewards</a></li>
-                  <li><a href="#">Work with Us</a></li>
-                  <li><a href="#">Meet the Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Rental</a></li>
+                  <li><a href="#">Tours</a></li>
                 </ul>
               </div>
             </div>
@@ -71,7 +71,7 @@ export const Footer = () => (
               <div className="footer-widget__column footer-widget__explore">
                 <h3 className="footer-widget__title">Explore</h3>
                 <ul className="list-unstyled footer-widget__explore-list">
-                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Tours</a></li>
                   <li><a href="#">Legal</a></li>
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Affilitate Program</a></li>
@@ -115,7 +115,7 @@ export const Footer = () => (
                 <div className="footer-widget__social">
                   <a href="https://youtube.com/@vietnammotorcycletour6674?si=kOduPDV6PDhNygvJ"><i className="fab fa-youtube"></i></a>
                   <a href="#"><i className="fab fa-tripadvisor"></i></a>
-                  <a href="#"><i className="fab fa-instagram"></i></a>
+                  <a href="#"><i className="fab fa-whatsapp"></i></a>
                 </div>
               </div>
               <div className="site-footer__bottom-right">
